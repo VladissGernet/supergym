@@ -23,6 +23,22 @@
 
 .main-header__logo {
   line-height: 0;
+  color: $white;
+
+  &:hover {
+    color: rgba($white, 0.5);
+  }
+  &:focus {
+    color: rgba($white, 0.3);
+    outline: none;
+  }
+  &:active {
+    color: rgba($white, 0.1);
+  }
+  &:disabled {
+    color: $ghost-white;
+    pointer-events: none;
+  }
 }
 
 .main-header__logo-image {
