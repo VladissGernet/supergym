@@ -11,10 +11,52 @@
     <link rel="manifest" href="/manifest.webmanifest">
   </head>
   <body class="page-body">
-    some text AAA
+    <header class="main-header">
+      <div class="main-header__container container">
+        <a class="main-header__logo main-header__logo--index" href="#">
+          <svg class="main-header__logo-icon" width="52" height="52"
+            viewBox="0 0 52 52" fill="none">
+            <use xlink:href="img/sprite.svg#logo"></use>
+          </svg>
+          <svg class="main-header__logo-text" width="67" height="50">
+            <use xlink:href="img/sprite.svg#logo-text"></use>
+          </svg>
+        </a>
+        <nav
+          class="main-header__navigation main-header__navigation--closed main-header__navigation--nojs">
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">
+              Открыть меню.
+            </span>
+          </button>
+          <ul class="main-header__list">
+            <li class="main-header__item">
+              <a href="#" class="main-header__link">
+                Каталог
+              </a>
+            </li>
+            <li class="main-header__item">
+              <a href="#" class="main-header__link">
+                Новости
+              </a>
+            </li>
+            <li class="main-header__item">
+              <a href="#" class="main-header__link">
+                Контакты
+              </a>
+            </li>
+            <li class="main-header__item">
+              <a href="#" class="main-header__link">
+                Заказать
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
     <!-- пример использования спрайта -->
-    <!-- <img src="/__spritemap#sprite-logo-view" alt="Это спрайт">
-    <svg>
+    <img src="/__spritemap#sprite-logo" alt="Это спрайт">
+    <!-- <svg>
       <use href="/__spritemap#sprite-user"></use>
     </svg> -->
     <!-- примеры требуемых атрибутов data-test="*" -->
