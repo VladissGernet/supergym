@@ -23,30 +23,12 @@
 
 .header__logo {
   line-height: 0;
-  color: $white;
-
-  &:hover {
-    color: rgba($white, 0.5);
-  }
-
-  &:focus {
-    color: rgba($white, 0.3);
-    outline: none;
-  }
-
-  &:active {
-    color: rgba($white, 0.1);
-  }
-
-  &:disabled {
-    color: $ghost-white;
-    pointer-events: none;
-  }
 }
 
 .header__logo-image {
   width: 100px;
   height: 20px;
+  object-fit: unset;
 
   @media (min-width: $tablet-width) {
     width: 110px;
