@@ -4,6 +4,7 @@
 
 // Global
 
+@import "global/global";
 @import "global/fonts";
 @import "global/visually-hidden";
 @import "global/variables";
@@ -11,5 +12,8 @@
 
 // Blocks
 
-@import "blocks/main-header";
+@import "blocks/page-body";
+@import "blocks/header";
+@import "blocks/main";
+@import "blocks/footer";
 @import "blocks/hero";
