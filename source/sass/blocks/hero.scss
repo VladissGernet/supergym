@@ -9,6 +9,7 @@
     rgb(115, 24, 75) 75.51%,
     rgb(180, 2, 42) 100%
   );
+  background-color: $bahama-blue;
   padding: 50px 0 32px;
 
   @media (min-width: $tablet-width) {
@@ -34,6 +35,10 @@
       "features title image"
       ". button image"
       ". . image";
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 941px;
   }
 }
 
