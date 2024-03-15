@@ -1,0 +1,38 @@
+.button {
+  font-family: $general-font;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  text-align: center;
+  color: $white;
+  display: block;
+  border: 2px solid $white;
+  outline: none;
+  padding: 27px 20px;
+  cursor: pointer;
+  background-color: transparent;
+  text-transform: uppercase;
+  transition: all 0.1s;
+}
+
+.button:hover {
+  background-color: $white;
+  color: $resolution-blue;
+}
+
+.button:focus {
+  border-color: $black;
+  background-color: rgba($white, 0.8);
+  color: $resolution-blue;
+}
+
+.button:active {
+  background-color: $white;
+  color: $resolution-dark-blue;
+}
+
+.button:disabled {
+  cursor: default;
+  pointer-events: none;
+  opacity: 0.5;
+}
