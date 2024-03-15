@@ -1,16 +1,15 @@
 // Vendor
-// ---------------------------------
 
-@import "vendor/normalize.scss";
+@import "vendor/normalize";
 
-//Global
-// ---------------------------------
-@import "global/fonts.scss";
-@import "global/visually-hidden.scss";
-@import "global/variables.scss";
-@import "global/container.scss";
+// Global
 
-//Blocks
-// ---------------------------------
-@import "blocks/main-header.scss";
-@import "blocks/hero.scss";
+@import "global/fonts";
+@import "global/visually-hidden";
+@import "global/variables";
+@import "global/container";
+
+// Blocks
+
+@import "blocks/main-header";
+@import "blocks/hero";
