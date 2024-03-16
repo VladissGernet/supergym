@@ -1,0 +1,53 @@
+.catalog {
+  @include normal-list;
+}
+
+.catalog__item {
+  background-color: $white;
+  padding: 50px 42px;
+}
+
+.catalog__title {
+  font-family: $general-font;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  color: $dark-cerulean-blue;
+  text-align: center;
+  margin: 0;
+}
+
+.catalog__description {
+  font-family: $general-font;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  color: $dark-cerulean-blue;
+  text-align: center;
+  margin: 18px 0 0;
+}
+
+.catalog__background-value {
+  font-family: $general-font;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+  color: $whisper;
+}
+
+.catalog__value {
+  font-family: $general-font;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 150%;
+}
+
+.catalog__currency {
+}
+
+.catalog__button {
+}
+
+//Остановился на добавлении иконки рубля, учесть доступность
