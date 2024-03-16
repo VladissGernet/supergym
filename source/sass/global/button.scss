@@ -13,11 +13,29 @@
   background-color: transparent;
   text-transform: uppercase;
   transition: all 0.1s;
+  text-decoration: none;
+}
+
+.button--primary {
+  border: none;
+  color: $resolution-blue;
+  box-shadow: inset 2px 2px $resolution-blue, inset -2px -2px $resolution-blue;
 }
 
 .button:hover {
   background-color: $white;
   color: $resolution-blue;
+}
+
+.button--primary:hover {
+  color: $white;
+  background-image: linear-gradient(
+    151.36deg,
+    rgb(237, 2, 51) 16.953%,
+    rgb(0, 62, 183) 96.592%
+  );
+  background-color: $resolution-blue;
+  box-shadow: none;
 }
 
 .button:focus {
@@ -26,13 +44,44 @@
   color: $resolution-blue;
 }
 
+.button--primary:focus {
+  background-image: linear-gradient(
+    151.36deg,
+    rgba(237, 2, 51, 0.8) 16.953%,
+    rgba(0, 62, 183, 0.8) 96.592%
+  );
+  background-color: rgb($resolution-blue, 0.1);
+  box-shadow: inset 2px 2px $black, inset -2px -2px $black;
+  color: $white;
+}
+
 .button:active {
   background-color: $white;
   color: $dark-cerulean-blue;
+}
+
+.button--primary:active {
+  background-image: linear-gradient(
+    151.36deg,
+    rgb(237, 2, 51) 16.953%,
+    rgb(0, 62, 183) 96.592%
+  );
+  background-color: $resolution-blue;
+  color: rgb($white, 0.7);
+  box-shadow: none;
 }
 
 .button:disabled {
   cursor: default;
   pointer-events: none;
   opacity: 0.5;
+}
+
+.button--primary:disabled {
+  cursor: default;
+  pointer-events: none;
+  outline: 2px solid rgb($dark-cerulean-blue, 0.3);
+  outline-offset: -2px;
+  box-shadow: none;
+  color: rgb($dark-cerulean-blue, 0.3);
 }

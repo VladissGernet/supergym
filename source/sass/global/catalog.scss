@@ -4,7 +4,8 @@
 
 .catalog__item {
   background-color: $white;
-  padding: 50px 42px;
+  padding: 50px 62px;
+  position: relative;
 }
 
 .catalog__title {
@@ -34,17 +35,27 @@
   line-height: 150%;
   text-align: center;
   color: $whisper;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .catalog__value {
+  position: relative;
   font-family: $general-font;
-  text-align: center;
   font-size: 48px;
   font-weight: 700;
   line-height: 150%;
+  color: $resolution-blue;
+  margin: 86px auto 0;
+  z-index: 1;
+  position: relative;
+  text-align: center;
 }
 
 .catalog__currency {
+  display: inline;
 }
 
 .catalog__button {
