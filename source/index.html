@@ -60,6 +60,7 @@
           <p class="about__description">
             Просторный зал площадью 900 кв/м
           </p>
+          <!-- wysiwyg-wrapper - CMS обертка. -->
           <div class="about__wysiwyg-wrapper wysiwyg-wrapper">
             <p>
               Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом
@@ -84,23 +85,31 @@
             srcset="img/about/gym/gym-mobile@2x.jpg 2x" width="320" height="280"
             alt="Тренажерный зал Supergym.">
         </picture>
-        <picture class="about__video-wrapper">
-          <source type="image/webp" media="(min-width: 1366px)"
-            srcset="img/about/video-preview/video-preview-desktop.webp 1x, img/about/video-preview/video-preview-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px)"
-            srcset="img/about/video-preview/video-preview-tablet.webp 1x, img/about/video-preview/video-preview-tablet@2x.webp 2x">
-          <source type="image/webp"
-            srcset="img/about/video-preview/video-preview-mobile.webp 1x, img/about/video-preview/video-preview-mobile@2x.webp 2x">
-          <source media="(min-width: 1366px)"
-            srcset="img/about/video-preview/video-preview-desktop.jpg 1x, img/about/video-preview/video-preview-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)"
-            srcset="img/about/video-preview/video-preview-tablet.jpg 1x, img/about/video-preview/video-preview-tablet@2x.jpg 2x">
-          <img class="about__video-preview"
-            src="img/about/video-preview/video-preview-mobile.jpg"
-            srcset="img/about/video-preview/video-preview-mobile@2x.jpg 2x"
-            width="320" height="280"
-            alt="Тренажерный зал Supergym.">
-        </picture>
+        <div class="about__video-container">
+          <picture class="about__video-wrapper">
+            <source type="image/webp" media="(min-width: 1366px)"
+              srcset="img/about/video-preview/video-preview-desktop.webp 1x, img/about/video-preview/video-preview-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/about/video-preview/video-preview-tablet.webp 1x, img/about/video-preview/video-preview-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/about/video-preview/video-preview-mobile.webp 1x, img/about/video-preview/video-preview-mobile@2x.webp 2x">
+            <source media="(min-width: 1366px)"
+              srcset="img/about/video-preview/video-preview-desktop.jpg 1x, img/about/video-preview/video-preview-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/about/video-preview/video-preview-tablet.jpg 1x, img/about/video-preview/video-preview-tablet@2x.jpg 2x">
+            <img class="about__video-preview"
+              src="img/about/video-preview/video-preview-mobile.jpg"
+              srcset="img/about/video-preview/video-preview-mobile@2x.jpg 2x"
+              width="320" height="280"
+              alt="Тренажерный зал Supergym.">
+          </picture>
+          <button class="about__play-button play-button" type="button">
+            <span class="visually-hidden">Запустить видео.</span>
+            <svg class="play-button__icon" width="72" height="72">
+              <use href="/__spritemap#sprite-play-button-element"></use>
+            </svg>
+          </button>
+        </div>
       </section>
       <section class="CLASSNAME">
         <h2 class="CLASSNAME__title">TITLECONTENT</h2>

@@ -1,0 +1,32 @@
+.play-button {
+  padding: 0;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid rgb($rogue, 0.2);
+  background-color: transparent;
+  position: relative;
+}
+
+.play-button::before {
+  content: "";
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-image: linear-gradient(
+    151.36deg,
+    rgb(237, 2, 51) 6.982%,
+    rgb(0, 62, 183) 116.498%
+  );
+}
+
+.play-button__icon {
+  position: absolute;
+  left: -2px;
+  top: -2px;
+}
