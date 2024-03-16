@@ -8,6 +8,10 @@
   position: relative;
 }
 
+.catalog__item:not(:last-of-type) {
+  margin-bottom: 35px;
+}
+
 .catalog__title {
   font-family: $general-font;
   font-size: 22px;
