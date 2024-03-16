@@ -14,4 +14,18 @@
     max-width: 502px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+    margin-top: 95px;
+  }
+}
+
+.wysiwyg-wrapper p:not(:first-of-type) {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    margin-top: 8px;
+  }
 }
