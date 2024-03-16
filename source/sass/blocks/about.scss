@@ -6,8 +6,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 120px auto 0;
-    padding: 0 103px;
+    margin: 0 auto;
+    padding: 120px 103px 0;
     max-width: 1366px;
     display: grid;
     grid-template-columns: 355px 1fr;
@@ -16,8 +16,10 @@
 }
 
 .about__text-container {
-  padding: 0;
-  margin: 0;
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin: 0;
+  }
 }
 
 .about__title {
