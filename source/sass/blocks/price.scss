@@ -14,11 +14,12 @@
 }
 
 .price__filter {
-  margin-top: 12px;
+  margin: 12px auto 0;
   display: flex;
   flex-wrap: wrap;
   gap: 45px;
   box-shadow: inset 0 -1px rgb($grey, 0.2);
+  width: 290px;
 }
 
 .price__control {
