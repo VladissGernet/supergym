@@ -7,6 +7,9 @@
   border: 2px solid rgb($rogue, 0.2);
   background-color: transparent;
   position: relative;
+  color: $white;
+  transition: all 0.2s;
+  outline: none;
 }
 
 .play-button::before {
@@ -23,10 +26,39 @@
     rgb(237, 2, 51) 6.982%,
     rgb(0, 62, 183) 116.498%
   );
+  background-color: $dark-cerulean-blue;
+  transition: all 0.2s;
+}
+
+.play-button:hover {
+  border-color: rgb($dark-cerulean-blue, 0.6);
+}
+
+.play-button:focus {
+  border-color: $dark-cerulean-blue;
+}
+
+.play-button:hover::before {
+  background-image: none;
+  background-color: $white;
+}
+
+.play-button:focus::before {
+  background-image: none;
+  background-color: $chinese-silver;
 }
 
 .play-button__icon {
   position: absolute;
   left: -2px;
   top: -2px;
+  transition: all 0.2s;
+}
+
+.play-button__icon:hover {
+  color: rgb($dark-cerulean-blue, 0.6);
+}
+
+.play-button__icon:focus {
+  color: $dark-cerulean-blue;
 }
