@@ -4,7 +4,7 @@
 
 .catalog__item {
   background-color: $white;
-  padding: 50px 62px;
+  padding: 50px 48px;
   position: relative;
 }
 
@@ -59,6 +59,7 @@
 }
 
 .catalog__button {
+  margin-top: 28px;
 }
 
 //Остановился на добавлении иконки рубля, учесть доступность

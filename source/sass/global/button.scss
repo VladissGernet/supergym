@@ -18,8 +18,9 @@
 
 .button--primary {
   border: none;
-  color: $resolution-blue;
-  box-shadow: inset 2px 2px $resolution-blue, inset -2px -2px $resolution-blue;
+  color: $dark-cerulean-blue;
+  box-shadow: inset 2px 2px $dark-cerulean-blue,
+    inset -2px -2px $dark-cerulean-blue;
 }
 
 .button:hover {
