@@ -3,7 +3,28 @@
   background-color: $ghost-white;
 
   @media (min-width: $tablet-width) {
+    overflow: hidden;
     padding: 60px 0;
+    position: relative;
+  }
+}
+
+.price::before {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 275px;
+    height: 328px;
+    bottom: 12px;
+    right: -16px;
+    background-image: url("/img/price/barbell-pancakes-tablet.png");
+    background-repeat: no-repeat;
+    background-size: 275px 328px;
+    transform: rotate(150deg);
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("/img/price/barbell-pancakes-tablet@2x.png");
+    }
   }
 }
 
