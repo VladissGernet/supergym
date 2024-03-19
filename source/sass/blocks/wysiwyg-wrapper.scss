@@ -42,7 +42,7 @@
 
 .wysiwyg-wrapper--features ul {
   @include normal-list;
-  margin-top: 20px;
+  margin-top: 29px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -55,52 +55,27 @@
 }
 
 .wysiwyg-wrapper--features li {
-  padding: 20px 0 10px;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-  }
+  display: grid;
+  padding: 10px 0;
 }
 
 .wysiwyg-wrapper--features li:not(:last-child) {
-  margin-bottom: 5px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-  }
+  margin-bottom: 14px;
 }
 
 .wysiwyg-wrapper--features li:nth-child(3n) {
   background-color: $bahama-blue;
-  margin-top: 28px;
-  margin-bottom: 20px;
-  padding-top: 30px;
-
-  @media (min-width: $tablet-width) {
-    grid-column: span 2;
-    width: 320px;
-    justify-self: center;
-  }
+  margin: 29px 0 30px;
+  padding: 30px 0 39px;
 }
 
-.wysiwyg-wrapper--features dl {
-  margin: 0;
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.wysiwyg-wrapper--features dt {
+.wysiwyg-wrapper--features h3 {
   color: $dark-cerulean-blue;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
-  margin-top: 11px;
-}
-
-.wysiwyg-wrapper--features dd {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
+  margin: 11px 0 0;
+  grid-row: 3 / 4;
 }
 
 .wysiwyg-wrapper--features b {
@@ -111,6 +86,7 @@
   font-size: 64px;
   font-weight: 700;
   line-height: 64px;
+  grid-row: 1 / 2;
 }
 
 .wysiwyg-wrapper--features span {
@@ -118,6 +94,7 @@
   font-weight: 400;
   line-height: 20px;
   color: $persian-blue;
+  grid-row: 2 / 3;
   margin-top: 1px;
 }
 
@@ -127,6 +104,7 @@
   line-height: 22px;
   color: $dark-cerulean-blue;
   margin: 13px auto 0;
+  grid-row: 4 / 5;
   max-width: 230px;
 }
 
@@ -142,7 +120,7 @@
   color: $white;
 }
 
-.wysiwyg-wrapper--features li:nth-child(3n) dt {
+.wysiwyg-wrapper--features li:nth-child(3n) h3 {
   color: $white;
   font-size: 22px;
   font-weight: 700;
@@ -153,6 +131,5 @@
 .wysiwyg-wrapper--features li:nth-child(3n) p {
   color: $white;
   margin-top: 20px;
-  max-width: 162px;
-  padding-bottom: 29px;
+  max-width: 170px;
 }
