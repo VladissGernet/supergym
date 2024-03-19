@@ -11,7 +11,12 @@
     "date date"
     "day month"
     "day year";
-  margin-bottom: 5px;
+  grid-template-columns: auto 1fr;
+  column-gap: 4px;
+
+  @media (min-width: $tablet-width) {
+    column-gap: 6px;
+  }
 }
 
 .datetime__title {
@@ -19,6 +24,11 @@
   font-weight: 300;
   line-height: 20px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
 }
 
 .datetime__title--date {
@@ -34,11 +44,28 @@
   left: 0;
   bottom: 2px;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    bottom: 3px;
+  }
+}
+
+.datetime__time-container {
+  margin-top: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+  }
 }
 
 .datetime__title--time {
   display: block;
   padding-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+  }
 }
 
 .datetime__title--time::before {
@@ -56,6 +83,10 @@
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 9px;
+  }
 }
 
 .datetime__month {
@@ -63,7 +94,11 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 100%;
-  min-width: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .datetime__year {
@@ -71,7 +106,11 @@
   font-size: 12px;
   font-weight: 400;
   line-height: 100%;
-  min-width: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .datetime__time-value {

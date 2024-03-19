@@ -127,16 +127,28 @@
 .price__control:hover {
   color: rgb($dark-cerulean-blue, 0.7);
   box-shadow: inset 0 -1px $grey;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: inset 0 -2px $grey;
+  }
 }
 
 .price__control:focus {
   color: $dark-cerulean-blue;
   box-shadow: inset 0 -1px $dark-cerulean-blue;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: inset 0 -2px $dark-cerulean-blue;
+  }
 }
 
 .price__control:active {
   color: $dark-cerulean-blue;
   box-shadow: inset 0 -1px $pink;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: inset 0 -2px $pink;
+  }
 }
 
 .price__control:disabled {
@@ -144,6 +156,10 @@
   box-shadow: inset 0 -1px rgb($dark-cerulean-blue, 0.3);
   cursor: default;
   pointer-events: none;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: inset 0 -2px rgb($dark-cerulean-blue, 0.3);
+  }
 }
 
 .price__catalog {
