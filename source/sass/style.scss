@@ -15,14 +15,15 @@
 
 // Blocks
 
+@import "blocks/wysiwyg-wrapper";
 @import "blocks/page-body";
 @import "blocks/header";
 @import "blocks/main";
 @import "blocks/footer";
 @import "blocks/hero";
 @import "blocks/about";
-@import "blocks/wysiwyg-wrapper";
 @import "blocks/price";
 @import "blocks/games";
 @import "blocks/datetime";
 @import "blocks/juri";
+@import "blocks/features";
