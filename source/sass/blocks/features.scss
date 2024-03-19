@@ -1,6 +1,10 @@
 .features {
   background-color: $ghost-white-primary;
   padding-top: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+  }
 }
 
 .features__title {
@@ -11,4 +15,9 @@
   text-align: center;
   color: $dark-cerulean-blue;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
 }
