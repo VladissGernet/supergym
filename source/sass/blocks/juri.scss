@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding-top: 35px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 100px;
+  }
 }
 
 .juri__container {
@@ -25,6 +29,10 @@
     font-size: 54px;
     line-height: 54px;
   }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .juri__list {
@@ -39,6 +47,11 @@
     gap: 40px;
     margin-top: 46px;
   }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: repeat(4, 260px);
+    width: 1160px;
+  }
 }
 
 .juri__item {
@@ -47,6 +60,16 @@
 
 .juri__item:nth-child(n + 3) {
   @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.juri__item:nth-child(n + 5) {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
@@ -61,6 +84,14 @@
 
 .juri__item--tablet {
   @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.juri__item--only-desktop {
+  display: none;
+
+  @media (min-width: $desktop-width) {
     display: block;
   }
 }
@@ -116,6 +147,11 @@
     left: 50%;
     transform: translateX(-50%);
     width: 714px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1307px;
+    top: 54.7%;
   }
 }
 
