@@ -99,6 +99,8 @@
   font-weight: 700;
   line-height: 64px;
   grid-row: 1 / 2;
+  width: min-content;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     margin: 0;
