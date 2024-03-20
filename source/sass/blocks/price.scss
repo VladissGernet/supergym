@@ -1,5 +1,5 @@
 .price {
-  padding: 40px 0;
+  padding: 41px 0 40px;
   background-color: $ghost-white;
 
   @media (min-width: $tablet-width) {
@@ -66,7 +66,7 @@
 }
 
 .price__filter {
-  margin: 12px auto 0;
+  margin: 11px auto 0;
   display: flex;
   flex-wrap: wrap;
   gap: 45px;
@@ -163,7 +163,7 @@
 }
 
 .price__catalog {
-  margin: 30px auto 0;
+  margin: 31px auto 0;
 
   @media (min-width: $tablet-width) {
     margin-top: 46px;
