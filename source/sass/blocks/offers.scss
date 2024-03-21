@@ -1,5 +1,13 @@
 .offers {
   margin-top: 41px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    width: $tablet-width;
+    padding: 0 45px;
+    margin: 61px auto 0;
+  }
 }
 
 .offers__title {
@@ -10,27 +18,59 @@
   color: $dark-cerulean-blue;
   margin: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
 }
 
 .offers__advert {
   background-color: $rogue;
   margin-top: 39px;
   padding-top: 31px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    margin: 34px 0 0;
+    padding: 0;
+    grid-template-areas:
+      "wysiwyg image"
+      "link image";
+    align-items: start;
+    grid-template-rows: 1fr auto;
+  }
 }
 
 .offers__wysiwyg-wrapper {
   font-family: $general-font;
   color: $white;
+
+  @media (min-width: $tablet-width) {
+    grid-area: wysiwyg;
+    margin-top: 40px;
+  }
 }
 
 .offers__link {
   margin: 18px auto 0;
   max-width: min-content;
+
+  @media (min-width: $tablet-width) {
+    margin: 34px 14px 34px;
+    grid-area: link;
+  }
 }
 
 .advert__image-wrapper {
   display: block;
   margin-top: 24px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    grid-area: image;
+  }
 }
 
 .offers__image {
@@ -39,11 +79,25 @@
   height: 360px;
   object-fit: cover;
   object-position: top;
+
+  @media (min-width: $tablet-width) {
+    width: 400px;
+    height: 462px;
+  }
 }
 
 .offers__list {
   margin: 40px auto 0;
   width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    padding: 0;
+    margin-top: 35px;
+  }
 }
 
 .offers__item {
@@ -51,13 +105,28 @@
   border-style: solid;
   border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%) 1;
   padding: 21px 21px 14px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 9px 14px;
+  }
 }
 
 .offers__item:not(:last-child) {
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .offers__item-link {
   width: min-content;
   margin: 9px auto 0;
+
+  @media (min-width: $tablet-width) {
+    margin: auto 0 0;
+  }
 }
