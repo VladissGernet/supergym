@@ -134,6 +134,10 @@
   bottom: 25px;
   transform: translateX(-50%);
   width: 177px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 24px;
+  }
 }
 
 .juri__controls {
