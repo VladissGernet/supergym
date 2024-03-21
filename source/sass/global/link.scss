@@ -1,0 +1,34 @@
+.link {
+  font-family: $general-font;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  color: $white;
+  text-transform: uppercase;
+  text-underline-offset: 7px;
+  outline: none;
+  padding: 10px;
+  border: 1px solid transparent;
+  transition: all 0.2s;
+}
+
+.link:hover {
+  color: rgb($white, 0.8);
+}
+
+.link:focus {
+  border-color: $white;
+  text-decoration: none;
+}
+
+.link:active {
+  border-color: transparent;
+  text-decoration: underline;
+  color: $white;
+}
+
+.link:disabled {
+  pointer-events: none;
+  cursor: default;
+  color: rgb($white, 0.5);
+}
