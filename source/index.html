@@ -394,53 +394,64 @@
       </section>
       <section class="offers" data-test="offers">
         <h2 class="offers__title">Акции</h2>
-        <article class="offers__advert advert">
-          <h3 class="advert__title">
-            Безлимитный абонемент в&nbsp;тренажёрный зал
-          </h3>
-          <p class="advert__price">
-            <span class="advert__duration">
-              Год
-            </span>
-            <span class="advert__value">
-              4999
-            </span>
-          </p>
-          <a class="advert__link link" href="#">Подробнее</a>
+        <article class="offers__advert">
+          <!-- wysiwyg-wrapper - CMS обертка. -->
+          <div
+            class="offers__wysiwyg-wrapper wysiwyg-wrapper wysiwyg-wrapper--offers">
+            <h3>
+              Безлимитный абонемент в&nbsp;тренажёрный зал
+            </h3>
+            <p>
+              <span>
+                Год
+              </span>
+              <b>
+                4999
+              </b>
+            </p>
+          </div>
+          <a class="offers__link link" href="#">Подробнее</a>
           <picture class="advert__image-wrapper">
             <source type="image/webp" media="(min-width: 1366px)"
-              srcset="img/advert/gym-girl-desktop.webp 1x, img/advert/gym-girl-desktop@2x.webp 2x">
+              srcset="img/offers/gym-girl-desktop.webp 1x, img/offers/gym-girl-desktop@2x.webp 2x">
             <source type="image/webp" media="(min-width: 768px)"
-              srcset="img/advert/gym-girl-tablet.webp 1x, img/advert/gym-girl-tablet@2x.webp 2x">
+              srcset="img/offers/gym-girl-tablet.webp 1x, img/offers/gym-girl-tablet@2x.webp 2x">
             <source type="image/webp"
-              srcset="img/advert/gym-girl-mobile.webp 1x, img/advert/gym-girl-mobile@2x.webp 2x">
+              srcset="img/offers/gym-girl-mobile.webp 1x, img/offers/gym-girl-mobile@2x.webp 2x">
             <source media="(min-width: 1366px)"
-              srcset="img/advert/gym-girl-desktop.jpg 1x, img/advert/gym-girl-desktop@2x.jpg 2x">
+              srcset="img/offers/gym-girl-desktop.jpg 1x, img/offers/gym-girl-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)"
-              srcset="img/advert/gym-girl-tablet.jpg 1x, img/advert/gym-girl-tablet@2x.jpg 2x">
-            <img class="advert__image"
-              src="img/advert/gym-girl-mobile.jpg"
-              srcset="img/advert/gym-girl-mobile@2x.jpg 2x" width="320"
+              srcset="img/offers/gym-girl-tablet.jpg 1x, img/offers/gym-girl-tablet@2x.jpg 2x">
+            <img class="offers__image"
+              src="img/offers/gym-girl-mobile.jpg"
+              srcset="img/offers/gym-girl-mobile@2x.jpg 2x" width="320"
               height="360"
               alt="Посетительница тренажерного зала Supergym.">
           </picture>
         </article>
-        <div class="offers__list offers-list container">
-          <article class="offers-list__item">
-            <h3 class="offers-list__item-title">Месяц бесплатно</h3>
-            <p class="offers-list__description">
-              Приведи друга, получи абонемент в&nbsp;подарок
-            </p>
-            <a class="offers-list__link link link--dark" href="#">
+        <div class="offers__list container">
+          <article class="offers__item">
+            <!-- wysiwyg-wrapper - CMS обертка. -->
+            <div
+              class="offers__item-content wysiwyg-wrapper wysiwyg-wrapper--offers-item">
+              <h3>Месяц бесплатно</h3>
+              <p>
+                Приведи друга, получи абонемент в&nbsp;подарок
+              </p>
+            </div>
+            <a class="offers__item-link link link--dark" href="#">
               Подробнее
             </a>
           </article>
-          <article class="offers-list__item">
-            <h3 class="offers-list__item-title">Скидка 20%</h3>
-            <p class="offers-list__description">
-              Корпоративный фитнес с командой
-            </p>
-            <a class="offers-list__link link link--dark" href="#">
+          <article class="offers__item">
+            <!-- wysiwyg-wrapper - CMS обертка. -->
+            <div
+              class="offers__item-content wysiwyg-wrapper wysiwyg-wrapper--offers-item">
+              <h3>Скидка 20%</h3>
+              <p>
+                Корпоративный фитнес с командой
+              </p></div>
+            <a class="offers__item-link link link--dark" href="#">
               Подробнее
             </a>
           </article>
