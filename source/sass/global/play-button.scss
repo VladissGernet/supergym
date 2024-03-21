@@ -37,11 +37,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-image: linear-gradient(
-    151.36deg,
-    rgb(237, 2, 51) 6.982%,
-    rgb(0, 62, 183) 116.498%
-  );
+  background-image: linear-gradient(90deg, #ed0233 0%, #003eb7 100%);
   background-color: $dark-cerulean-blue;
   transition: all 0.2s;
 }
