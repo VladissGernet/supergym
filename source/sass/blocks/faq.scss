@@ -1,0 +1,30 @@
+.faq {
+  padding-top: 71px;
+  background-color: $ghost-white;
+}
+
+.faq__title {
+  margin: 0;
+  font-family: $secondary-font;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  color: $dark-cerulean-blue;
+  text-align: center;
+}
+
+.faq__list {
+  @include normal-list;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.faq__item {
+}
+
+.faq__item--active {
+}
+
+.faq__button {
+}
