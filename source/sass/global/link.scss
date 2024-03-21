@@ -10,6 +10,7 @@
   padding: 10px;
   border: 1px solid transparent;
   transition: all 0.2s;
+  display: block;
 }
 
 .link:hover {
@@ -31,4 +32,29 @@
   pointer-events: none;
   cursor: default;
   color: rgb($white, 0.5);
+}
+
+.link--dark {
+  color: $bahama-blue;
+}
+
+.link--dark:hover {
+  color: rgb($bahama-blue, 0.8);
+}
+
+.link--dark:focus {
+  border-color: $bahama-blue;
+  text-decoration: none;
+}
+
+.link--dark:active {
+  border-color: transparent;
+  text-decoration: underline;
+  color: $bahama-blue;
+}
+
+.link--dark:disabled {
+  pointer-events: none;
+  cursor: default;
+  color: rgb($bahama-blue, 0.5);
 }
