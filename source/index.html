@@ -392,6 +392,60 @@
           </ul>
         </div>
       </section>
+      <section class="offers" data-test="offers">
+        <h2 class="offers__title">Акции</h2>
+        <article class="offers__advert advert">
+          <h3 class="advert__title">
+            Безлимитный абонемент в тренажёрный зал
+          </h3>
+          <p class="advert__price">
+            <span class="advert__duration">
+              Год
+            </span>
+            <span class="advert__value">
+              4999
+            </span>
+          </p>
+          <a class="advert__link link" href="#">Подробнее</a>
+          <picture class="advert__image-wrapper">
+            <source type="image/webp" media="(min-width: 1366px)"
+              srcset="img/advert/gym-girl-desktop.webp 1x, img/advert/gym-girl-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)"
+              srcset="img/advert/gym-girl-tablet.webp 1x, img/advert/gym-girl-tablet@2x.webp 2x">
+            <source type="image/webp"
+              srcset="img/advert/gym-girl-mobile.webp 1x, img/advert/gym-girl-mobile@2x.webp 2x">
+            <source media="(min-width: 1366px)"
+              srcset="img/advert/gym-girl-desktop.jpg 1x, img/advert/gym-girl-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)"
+              srcset="img/advert/gym-girl-tablet.jpg 1x, img/advert/gym-girl-tablet@2x.jpg 2x">
+            <img class="advert__image"
+              src="img/advert/gym-girl-mobile.jpg"
+              srcset="img/advert/gym-girl-mobile@2x.jpg 2x" width="320"
+              height="360"
+              alt="Посетительница тренажерного зала Supergym.">
+          </picture>
+        </article>
+        <div class="offers__list offers-list">
+          <article class="offers-list__item">
+            <h3 class="offers-list__item-title">Месяц бесплатно</h3>
+            <p class="offers-list__description">
+              Приведи друга, получи абонемент в подарок
+            </p>
+            <a class="offers-list__link" href="#">
+              Подробнее
+            </a>
+          </article>
+          <article class="offers-list__item">
+            <h3 class="offers-list__item-title">Скидка 20%</h3>
+            <p class="offers-list__description">
+              Корпоративный фитнес с командой
+            </p>
+            <a class="offers-list__link" href="#">
+              Подробнее
+            </a>
+          </article>
+        </div>
+      </section>
       <!-- Fish text !!! -->
       <section class="fish-text">
         <div class="container">
@@ -448,10 +502,10 @@
     <div data-test="price">price</div>
     <div data-test="games">games</div>
     <div data-test="juri">juri</div>
-
     <div data-test="features">features</div>
 
     <div data-test="offers">offers</div>
+
     <div data-test="faq">faq</div>
     <div data-test="reviews">reviews</div>
     <div data-test="form">form</div>
