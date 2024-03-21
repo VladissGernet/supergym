@@ -18,13 +18,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-}
-
-.faq__item {
-}
-
-.faq__item--active {
+  margin-top: 34px;
 }
 
 .faq__button {
+  width: 100%;
+  min-height: 46px;
 }
