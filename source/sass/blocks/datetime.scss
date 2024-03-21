@@ -7,6 +7,10 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 20px;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 1px;
+  }
 }
 
 .datetime__date-wrapper {
@@ -25,6 +29,11 @@
     margin-top: 1px;
     display: grid;
     column-gap: 6px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 6px;
+    padding-top: 4px;
   }
 }
 
@@ -51,7 +60,7 @@
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
-    margin-top: 4px;
+    margin-top: 5px;
   }
 }
 
@@ -126,7 +135,8 @@
   @media (min-width: $desktop-width) {
     font-size: 40px;
     line-height: 40px;
-    margin-top: 4px;
+    margin-top: 6px;
+    padding-top: 7px;
   }
 }
 
