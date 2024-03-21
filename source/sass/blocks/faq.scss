@@ -1,6 +1,10 @@
 .faq {
   padding-top: 71px;
   background-color: $ghost-white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 61px;
+  }
 }
 
 .faq__title {
@@ -11,6 +15,11 @@
   line-height: 32px;
   color: $dark-cerulean-blue;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 42px;
+    line-height: 42px;
+  }
 }
 
 .faq__list {
@@ -19,9 +28,18 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   margin-top: 34px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 44px;
+  }
 }
 
 .faq__button {
   width: 100%;
   min-height: 46px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 54px;
+  }
 }

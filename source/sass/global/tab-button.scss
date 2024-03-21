@@ -13,6 +13,11 @@
   color: $dark-cerulean-blue;
   cursor: pointer;
   transition: all 0.1s;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
 
 .tab-button:hover {
