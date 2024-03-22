@@ -1,5 +1,6 @@
 .faq {
   padding-top: 71px;
+  padding-bottom: 70px;
   background-color: $ghost-white;
 
   @media (min-width: $tablet-width) {
@@ -42,4 +43,8 @@
   @media (min-width: $tablet-width) {
     min-height: 54px;
   }
+}
+
+.faq__accordion {
+  margin-top: 35px;
 }
