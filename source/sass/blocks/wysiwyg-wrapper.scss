@@ -424,3 +424,85 @@
     width: 400px;
   }
 }
+
+// Accordion
+.wysiwyg-wrapper__accordion {
+  @include normal-list;
+  border-top: solid 1px $slate-gray;
+}
+
+.wysiwyg-wrapper__accordion li {
+  padding-top: 20px;
+  padding-bottom: 21px;
+  box-shadow: inset 0 -1px $slate-gray;
+  overflow: hidden;
+}
+
+.wysiwyg-wrapper__accordion label {
+  font-family: $general-font;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $dark-cerulean-blue;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  padding-right: 40px;
+  user-select: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}
+
+.wysiwyg-wrapper__accordion label::before {
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 30px;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  background-image: linear-gradient($bahama-blue, $bahama-blue),
+    linear-gradient($bahama-blue, $bahama-blue);
+  background-size: 14px 2px, 2px 14px;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 1px solid $bahama-blue;
+  border-radius: 50%;
+  transition: all 0.2s;
+}
+
+.wysiwyg-wrapper__accordion input {
+  @include visually-hidden;
+}
+
+.wysiwyg-wrapper__accordion p {
+  font-family: $general-font;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 20px;
+  margin: 0;
+  max-height: 0;
+  transition: all 0.5s;
+  overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.wysiwyg-wrapper__accordion input:checked ~ p {
+  max-height: 100vh;
+  margin-top: 20px;
+}
+
+.wysiwyg-wrapper__accordion input:checked ~ label::before {
+  background-image: linear-gradient($white, $white);
+  background-color: $bahama-blue;
+  background-size: 14px 2px;
+  transform: translateY(-50%) rotate(180deg);
+}
