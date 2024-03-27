@@ -487,6 +487,27 @@
   }
 }
 
+.wysiwyg-wrapper--accordion input:hover ~ label::before {
+  background-color: $bahama-blue;
+  background-image: linear-gradient($white, $white),
+    linear-gradient($white, $white);
+}
+
+.wysiwyg-wrapper--accordion input:focus ~ label::before {
+  background-color: $slate-gray;
+  background-image: linear-gradient($white, $white),
+    linear-gradient($white, $white);
+}
+
+.wysiwyg-wrapper--accordion input:disabled ~ label {
+  cursor: default;
+  pointer-events: none;
+}
+
+.wysiwyg-wrapper--accordion input:disabled ~ label::before {
+  opacity: 0.3;
+}
+
 .wysiwyg-wrapper--accordion span {
   display: block;
 }
@@ -536,4 +557,14 @@
   background-color: $bahama-blue;
   background-size: 14px 2px;
   transform: translateY(-50%) rotate(180deg);
+}
+
+.wysiwyg-wrapper--accordion input:checked:hover ~ label::before {
+  background-image: linear-gradient($bahama-blue, $bahama-blue);
+  background-color: transparent;
+}
+
+.wysiwyg-wrapper--accordion input:checked:focus ~ label::before {
+  background-image: linear-gradient($white, $white);
+  background-color: $slate-gray;
 }
