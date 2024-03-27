@@ -1,5 +1,9 @@
 .reviews {
   padding: 41px 0 100px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 100px;
+  }
 }
 
 .reviews__title {
@@ -10,9 +14,18 @@
   color: $dark-cerulean-blue;
   text-align: center;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 54px;
+    line-height: 54px;
+  }
 }
 
 .reviews__list {
   margin-top: 39px;
   padding: 0 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 35px;
+  }
 }

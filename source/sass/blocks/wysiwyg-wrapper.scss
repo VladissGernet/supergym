@@ -621,6 +621,17 @@
 .wysiwyg-wrapper--reviews li {
   background-color: $bahama-blue;
   padding: 30px 25px 29px;
+
+  @media (min-width: $tablet-width) {
+    width: 500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+      "image title"
+      "image text";
+    gap: 19px 40px;
+    padding: 40px 30px 40px;
+  }
 }
 
 .wysiwyg-wrapper--reviews img {
@@ -629,6 +640,12 @@
   width: 68px;
   height: 68px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-area: image;
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .wysiwyg-wrapper--reviews h3 {
@@ -639,6 +656,14 @@
   line-height: 20px;
   color: $white;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-area: title;
+    font-size: 22px;
+    line-height: 22px;
+    margin: 1px 0 0;
+    text-align: left;
+  }
 }
 
 .wysiwyg-wrapper--reviews p {
@@ -649,4 +674,12 @@
   line-height: 22px;
   color: $white;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    grid-area: text;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    text-align: left;
+  }
 }
