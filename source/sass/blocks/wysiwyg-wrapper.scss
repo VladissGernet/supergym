@@ -441,6 +441,10 @@
     padding-top: 25px;
     padding-bottom: 26px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 0 23px;
+  }
 }
 
 .wysiwyg-wrapper--accordion label {
@@ -461,6 +465,12 @@
     display: flex;
     min-height: 40px;
     align-items: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
   }
 }
 
@@ -510,6 +520,11 @@
     max-width: 500px;
     margin-top: 1px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    max-width: 650px;
+  }
 }
 
 // PixelPerfect fix
@@ -525,11 +540,19 @@
   @media (min-width: $tablet-width) {
     padding: 24px 0 25px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 23px 0 23px;
+  }
 }
 
 .wysiwyg-wrapper--accordion li:last-child span {
   @media (min-width: $tablet-width) {
     margin-top: 2px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }
 
@@ -566,6 +589,11 @@
   @media (min-width: $tablet-width) {
     margin-top: 10px;
     max-width: 559px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 23px;
+    max-width: 660px;
   }
 }
 
