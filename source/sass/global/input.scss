@@ -9,21 +9,38 @@
   border-bottom: 1px solid $slate-gray;
   padding: 7px 0 3px;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 2px;
+    border-bottom: 2px solid $slate-gray;
+  }
 }
 
 .input:hover {
   border-bottom: 1px solid $white;
+
+  @media (min-width: $tablet-width) {
+    border-bottom-width: 2px;
+  }
 }
 
 .input:focus {
   outline: 1px solid $white;
   outline-offset: 4px;
   border: none;
+
+  @media (min-width: $tablet-width) {
+    outline-width: 2px;
+  }
 }
 
 .input:disabled {
   border-bottom: 1px solid rgb($white, 0.3);
   color: rgb($white, 0.4);
+
+  @media (min-width: $tablet-width) {
+    border-bottom-width: 2px;
+  }
 }
 
 .input::placeholder {
@@ -39,4 +56,8 @@
 .input:invalid {
   color: $white;
   border-bottom: 1px solid $torch-red;
+
+  @media (min-width: $tablet-width) {
+    border-bottom-width: 2px;
+  }
 }
