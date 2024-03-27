@@ -439,6 +439,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 25px;
+    padding-bottom: 26px;
   }
 }
 
@@ -504,6 +505,11 @@
 
 .wysiwyg-wrapper--accordion span {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    max-width: 500px;
+    margin-top: 1px;
+  }
 }
 
 // PixelPerfect fix
@@ -512,6 +518,18 @@
 
   @media (min-width: $tablet-width) {
     max-width: unset;
+  }
+}
+
+.wysiwyg-wrapper--accordion li:last-child {
+  @media (min-width: $tablet-width) {
+    padding: 24px 0 25px;
+  }
+}
+
+.wysiwyg-wrapper--accordion li:last-child span {
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
   }
 }
 
@@ -544,6 +562,11 @@
 .wysiwyg-wrapper--accordion input:checked ~ p {
   max-height: 100vh;
   margin-top: 20px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 10px;
+    max-width: 559px;
+  }
 }
 
 .wysiwyg-wrapper--accordion input:checked ~ label::before {
