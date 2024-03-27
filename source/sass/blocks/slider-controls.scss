@@ -1,0 +1,57 @@
+.slider-controls__control {
+  @media (min-width: $tablet-width) {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    outline: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+    color: $dark-cerulean-blue;
+    box-shadow: none;
+  }
+}
+
+.slider-controls__control:hover {
+  @media (min-width: $tablet-width) {
+    border-color: $dark-cerulean-blue;
+  }
+}
+
+.slider-controls__control:focus {
+  @media (min-width: $tablet-width) {
+    border-color: $dark-cerulean-blue;
+    background-color: $whisper;
+  }
+}
+
+.slider-controls__control:active {
+  @media (min-width: $tablet-width) {
+    color: $white;
+    background-color: $dark-cerulean-blue;
+  }
+}
+
+.slider-controls__control:disabled {
+  @media (min-width: $tablet-width) {
+    border-color: transparent;
+    background-color: transparent;
+    color: rgb($dark-cerulean-blue, 0.3);
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+.slider-controls__control:last-child {
+  @media (min-width: $tablet-width) {
+    transform: rotate(180deg) translateY(-4%);
+  }
+}
+
+.juri__arrow {
+  @media (min-width: $tablet-width) {
+    margin: -1px;
+  }
+}
