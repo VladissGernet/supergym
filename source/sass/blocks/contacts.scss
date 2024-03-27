@@ -53,13 +53,15 @@
 }
 
 .contacts__list::before {
-  position: absolute;
-  content: "";
-  width: 1px;
-  height: calc(100% - 8px);
-  left: 50%;
-  top: 0;
-  background-color: $slate-gray;
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: calc(100% - 8px);
+    left: 50%;
+    top: 0;
+    background-color: $slate-gray;
+  }
 
   @media (min-width: $desktop-width) {
     width: 2px;
