@@ -594,6 +594,68 @@
           </ul>
         </div>
       </section>
+      <section class="contact-us" data-test="form">
+        <h2 class="visually-hidden">Связь с нами.</h2>
+        <form class="contact-us__form form" method="post"
+          enctype="multipart/form-data"
+          action="#" autocomplete="off">
+          <div class="container">
+            <h3 class="form__title">Бесплатное занятие</h3>
+            <label class="form__field">
+              <span class="visually-hidden">Имя.</span>
+              <input class="form__control input" type="text" name="name"
+                placeholder="Имя">
+            </label>
+            <label class="form__field form__field--phone">
+              <span class="visually-hidden">Телефон.</span>
+              <input class="form__control input" type="tel" name="phone"
+                placeholder="Телефон">
+            </label>
+            <button class="form__submit button" type="submit">
+              Отправить
+            </button>
+          </div>
+        </form>
+        <section class="contacts">
+          <div class="container">
+            <h3 class="contacts__title">
+              Контакты
+            </h3>
+            <dl class="contacts__list">
+              <dt class="contacts__termin">
+                Адрес:
+              </dt>
+              <dd class="contacts__description">
+                <address class="contacts__address">
+                  г. Омск, ул. 60 лет Октября, 7
+                </address>
+              </dd>
+              <dt class="contacts__termin">
+                График работы:
+              </dt>
+              <dd class="contacts__description">
+                Пн-Вс: с 8:00 до 22:00
+              </dd>
+              <dt class="contacts__termin">
+                Телефон:
+              </dt>
+              <dd class="contacts__description">
+                <a class="contacts__link" href="tel:88005555555">
+                  8 800 555-55-55
+                </a>
+              </dd>
+              <dt class="contacts__termin">
+                Email:
+              </dt>
+              <dd class="contacts__description">
+                <a class="contacts__link" href="mailto:oмск@supergym.ru">
+                  oмск@supergym.ru
+                </a>
+              </dd>
+            </dl>
+          </div>
+        </section>
+      </section>
       <!-- Fish text !!! -->
       <section class="fish-text">
         <div class="container">
@@ -652,11 +714,11 @@
     <div data-test="juri">juri</div>
     <div data-test="features">features</div>
     <div data-test="offers">offers</div>
-
     <div data-test="faq">faq</div>
-
     <div data-test="reviews">reviews</div>
+
     <div data-test="form">form</div>
+
     <div data-test="footer">footer</div>
     <script type="module" src="js/main.js"></script> -->
   </body>

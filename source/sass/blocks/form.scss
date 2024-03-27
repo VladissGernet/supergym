@@ -1,0 +1,33 @@
+.form {
+  background-color: $dark-cerulean-blue;
+  padding: 71px 0 70px;
+}
+
+.form__title {
+  margin: 0;
+  font-family: $secondary-font;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 32px;
+  color: $white;
+}
+
+.form__field {
+  margin-top: 29px;
+  display: block;
+}
+
+.form__field--phone {
+  margin-top: 30px;
+}
+
+.form__control {
+  width: 100%;
+}
+
+.form__submit {
+  margin-top: 36px;
+  display: block;
+  width: 100%;
+  padding: 22px 20px;
+}

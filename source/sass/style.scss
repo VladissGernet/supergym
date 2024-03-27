@@ -11,9 +11,9 @@
 @import "global/container";
 @import "global/button";
 @import "global/play-button";
-@import "global/catalog";
 @import "global/link";
 @import "global/tab-button";
+@import "global/input";
 
 // Blocks
 
@@ -26,6 +26,7 @@
 @import "blocks/footer";
 @import "blocks/hero";
 @import "blocks/about";
+@import "blocks/catalog";
 @import "blocks/price";
 @import "blocks/games";
 @import "blocks/datetime";
@@ -34,3 +35,5 @@
 @import "blocks/offers";
 @import "blocks/faq";
 @import "blocks/reviews";
+@import "blocks/form";
+@import "blocks/contacts";

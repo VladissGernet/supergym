@@ -1,0 +1,42 @@
+.input {
+  font-family: $general-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $white;
+  background-color: $dark-cerulean-blue;
+  border: none;
+  border-bottom: 1px solid $slate-gray;
+  padding: 7px 0 3px;
+  outline: none;
+}
+
+.input:hover {
+  border-bottom: 1px solid $white;
+}
+
+.input:focus {
+  outline: 1px solid $white;
+  outline-offset: 4px;
+  border: none;
+}
+
+.input:disabled {
+  border-bottom: 1px solid rgb($white, 0.3);
+  color: rgb($white, 0.4);
+}
+
+.input::placeholder {
+  font-family: $general-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: rgb($white, 0.4);
+}
+
+// Error condition
+
+.input:invalid {
+  color: $white;
+  border-bottom: 1px solid $torch-red;
+}
