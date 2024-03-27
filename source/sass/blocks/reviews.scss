@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     padding: 60px 0 100px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 0;
+  }
 }
 
 .reviews__container {
@@ -39,6 +43,11 @@
     left: 50%;
     width: 716px;
   }
+
+  @media (min-width: $desktop-width) {
+    top: 59.2%;
+    width: 710px;
+  }
 }
 
 .reviews__list {
@@ -47,5 +56,9 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 75px;
   }
 }

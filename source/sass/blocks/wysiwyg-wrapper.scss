@@ -632,6 +632,12 @@
     gap: 19px 40px;
     padding: 40px 30px 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 60px;
+    width: 560px;
+    gap: 19px 30px;
+  }
 }
 
 .wysiwyg-wrapper--reviews img {
@@ -681,5 +687,9 @@
     line-height: 24px;
     margin: 0;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 2px;
   }
 }
