@@ -19,6 +19,12 @@
       "submit submit";
     gap: 35px 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 683px;
+    margin: 0 0 0 auto;
+    padding: 0 103px;
+  }
 }
 
 .form__title {
@@ -34,6 +40,10 @@
     line-height: 54px;
     grid-area: title;
     text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
   }
 }
 
