@@ -557,9 +557,25 @@
         </div>
       </section>
       <section class="reviews" data-test="reviews">
-        <div class="container">
+        <div class="reviews__container container">
           <h2 class="reviews__title">Отзывы</h2>
           <!-- wysiwyg-wrapper - CMS обертка. -->
+          <div class="reviews__controls slider-controls">
+            <button class="slider-controls__control" type="button" disabled>
+              <svg class="slider-controls__arrow" width="56" height="56"
+                aria-label="₽">
+                <use href="/__spritemap#sprite-control-button-arrow"></use>
+              </svg>
+              <span class="visually-hidden">Предыдущий слайд.</span>
+            </button>
+            <button class="slider-controls__control" type="button">
+              <svg class="slider-controls__arrow" width="56" height="56"
+                aria-label="₽">
+                <use href="/__spritemap#sprite-control-button-arrow"></use>
+              </svg>
+              <span class="visually-hidden">Следующий слайд.</span>
+            </button>
+          </div>
           <ul class="reviews__list wysiwyg-wrapper wysiwyg-wrapper--reviews">
             <li>
               <img src="img/reviews/anna-orlova.jpg" width="68" height="68"
