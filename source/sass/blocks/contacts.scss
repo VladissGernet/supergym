@@ -27,11 +27,21 @@
 
   @media (min-width: $tablet-width) {
     columns: 2 190px;
-    column-rule: 2px solid tomato;
     column-gap: 60px;
     width: 440px;
     margin: 36px auto 0;
+    position: relative;
   }
+}
+
+.contacts__list::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: calc(100% - 8px);
+  left: 50%;
+  top: 0;
+  background-color: $slate-gray;
 }
 
 .contacts__content {
