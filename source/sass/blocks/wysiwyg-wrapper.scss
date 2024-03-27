@@ -612,3 +612,41 @@
   background-image: url("../../__spritemap#sprite-accordion-minus-light-view");
   background-color: $slate-gray;
 }
+
+// Reviews
+.wysiwyg-wrapper--reviews {
+  @include normal-list;
+}
+
+.wysiwyg-wrapper--reviews li {
+  background-color: $bahama-blue;
+  padding: 30px 25px 29px;
+}
+
+.wysiwyg-wrapper--reviews img {
+  border-radius: 50%;
+  display: block;
+  width: 68px;
+  height: 68px;
+  margin: 0 auto;
+}
+
+.wysiwyg-wrapper--reviews h3 {
+  margin: 10px 0 0;
+  font-family: $general-font;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  color: $white;
+  text-align: center;
+}
+
+.wysiwyg-wrapper--reviews p {
+  margin: 17px 0 0;
+  font-family: $general-font;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  color: $white;
+  text-align: center;
+}
