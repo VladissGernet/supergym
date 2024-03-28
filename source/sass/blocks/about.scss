@@ -113,6 +113,9 @@
 .about__video-container {
   position: relative;
   margin-top: 36px;
+  background-color: $black;
+  width: 100%;
+  height: 170px;
 
   @media (min-width: $tablet-width) {
     width: 270px;
@@ -146,6 +149,10 @@
 .about__video-wrapper {
   display: block;
   line-height: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .about__video-preview {
@@ -153,6 +160,7 @@
   object-fit: cover;
   width: 100%;
   height: 170px;
+  transition: all 0.4s;
 
   @media (min-width: $tablet-width) {
     width: 270px;
@@ -163,4 +171,13 @@
     width: 360px;
     height: 230px;
   }
+}
+
+.about__iframe {
+  width: 100%;
+  height: 170px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
