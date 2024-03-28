@@ -7,6 +7,10 @@
   @media (min-width: $tablet-width) {
     gap: 15px;
   }
+
+  @media (min-width: $desktop-width) {
+    gap: 15px 10px;
+  }
 }
 
 .social__link {
