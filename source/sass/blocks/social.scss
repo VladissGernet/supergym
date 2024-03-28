@@ -1,0 +1,15 @@
+.social {
+  @include normal-list;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.social__link {
+  background-color: $white;
+  color: $dark-blue;
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
