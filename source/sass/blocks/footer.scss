@@ -1,12 +1,41 @@
 .footer {
   background-color: $dark-blue;
   padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 45px 0;
+  }
+}
+
+.footer__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-areas: "logo menu social";
+    gap: 35px;
+    grid-template-columns: 110px 1fr 105px;
+  }
+}
+
+.footer__logo {
+  @media (min-width: $tablet-width) {
+    grid-area: logo;
+  }
 }
 
 .footer__menu {
   margin-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: menu;
+    margin: 2px 0 0;
+  }
 }
 
 .footer__social {
   margin-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    grid-area: social;
+    margin: 0;
+  }
 }

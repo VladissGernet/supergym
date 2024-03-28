@@ -1,9 +1,8 @@
 .contacts {
-  padding-top: 37px;
-  padding-bottom: 39px;
+  padding: 37px 0 39px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 60px;
+    padding: 60px 0 52px;
   }
 }
 
