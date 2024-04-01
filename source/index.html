@@ -248,10 +248,10 @@
         </div>
       </section>
       <section class="juri" data-test="juri">
-        <div class="juri__container container">
+        <div class="container swiper-juri">
           <h2 class="juri__title">Жюри</h2>
-          <ul class="juri__list">
-            <li class="juri__item juri__item--tablet">
+          <div class="juri__list swiper-wrapper">
+            <div class="swiper-slide">
               <figure class="juri__image-wrapper">
                 <picture class="juri__image-container">
                   <source type="image/webp" media="(min-width: 768px)"
@@ -269,8 +269,8 @@
                 </picture>
                 <figcaption class="juri__name">Анна Павлова</figcaption>
               </figure>
-            </li>
-            <li class="juri__item juri__item--tablet">
+            </div>
+            <div class="swiper-slide">
               <figure class="juri__image-wrapper">
                 <picture class="juri__image-container">
                   <source type="image/webp" media="(min-width: 768px)"
@@ -288,8 +288,8 @@
                 </picture>
                 <figcaption class="juri__name">Алексей Лавров</figcaption>
               </figure>
-            </li>
-            <li class="juri__item juri__item--only-mobile">
+            </div>
+            <div class="swiper-slide">
               <figure class="juri__image-wrapper">
                 <picture class="juri__image-container">
                   <source type="image/webp" media="(min-width: 768px)"
@@ -307,8 +307,8 @@
                 </picture>
                 <figcaption class="juri__name">Александр Пашков</figcaption>
               </figure>
-            </li>
-            <li class="juri__item juri__item--only-desktop">
+            </div>
+            <div class="swiper-slide">
               <figure class="juri__image-wrapper">
                 <picture class="juri__image-container">
                   <source type="image/webp" media="(min-width: 768px)"
@@ -326,24 +326,28 @@
                 </picture>
                 <figcaption class="juri__name">Мария Кетова</figcaption>
               </figure>
-            </li>
-          </ul>
-          <div class="juri__controls slider-controls">
-            <button class="slider-controls__control" type="button">
+            </div>
+          </div>
+
+          <!-- <div class="juri__controls">
+            <button class="slider-controls__control swiper-button-prev"
+              type="button">
               <svg class="slider-controls__arrow" width="56" height="56"
                 aria-label="₽">
                 <use href="/__spritemap#sprite-control-button-arrow"></use>
               </svg>
               <span class="visually-hidden">Предыдущий слайд.</span>
             </button>
-            <button class="slider-controls__control" type="button">
+            <button class="slider-controls__control swiper-button-next "
+              type="button">
               <svg class="slider-controls__arrow" width="56" height="56"
                 aria-label="₽">
                 <use href="/__spritemap#sprite-control-button-arrow"></use>
               </svg>
               <span class="visually-hidden">Следующий слайд.</span>
             </button>
-          </div>
+          </div> -->
+
         </div>
       </section>
       <section class="features" data-test="features">
