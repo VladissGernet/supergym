@@ -1,5 +1,5 @@
 import {
-  initialPriceValues,
+  InitialPriceValues,
   PRICE_CURRENCY
 } from './constants.js';
 
@@ -18,7 +18,7 @@ const onFilterControlClick = (evt) => {
   selectedControl.classList.add('price__control--active');
   const selectedControlValue = Number(selectedControl.textContent.replace(/\D+/g, ''));
   priceCatalogItems.forEach((item, index) => {
-    const itemInitialValue = Object.values(initialPriceValues)[index];
+    const itemInitialValue = Object.values(InitialPriceValues)[index];
     const backgroundValue = item.querySelector('.catalog__background-value');
     const itemMainValue = item.querySelector('.catalog__value');
     itemMainValue.innerHTML = '';

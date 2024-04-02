@@ -13,7 +13,7 @@ aria-label="₽">
 <use href="/__spritemap#sprite-rub"></use>
 </svg>
 `;
-const initialPriceValues = {
+const InitialPriceValues = {
   COACH: 5000,
   DAYTIME: 1700,
   FULL_DAY: 2700
@@ -21,6 +21,6 @@ const initialPriceValues = {
 
 export {
   ABOUT_VIDEO_LINK,
-  initialPriceValues,
+  InitialPriceValues,
   PRICE_CURRENCY
 };
