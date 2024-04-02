@@ -24,7 +24,7 @@ const checkWindowWidthJuri = () => {
       break;
     case window.innerWidth >= TABLET_WIDTH && window.innerWidth < DESKTOP_WIDTH:
       swiperJuri.params.slidesPerView = JuriSlidesPerView.TABLET;
-      swiperJuri.allowTouchMove = false;
+      swiperJuri.allowTouchMove = true;
       break;
     case window.innerWidth >= DESKTOP_WIDTH:
       swiperJuri.params.slidesPerView = JuriSlidesPerView.DESKTOP;
