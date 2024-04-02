@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 60px 0;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -31,6 +32,11 @@
   }
 }
 
+.reviews__swiper {
+  margin-top: 39px;
+  width: 240px;
+}
+
 .reviews__controls {
   display: none;
 
@@ -42,6 +48,7 @@
     top: 54.6%;
     left: 50%;
     width: 716px;
+    outline: 5px solid tomato;
   }
 
   @media (min-width: $desktop-width) {
