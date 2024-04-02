@@ -12,16 +12,17 @@
 
 .catalog__item {
   background-color: $white;
-  padding: 50px 48px;
+  padding: 43px 41px;
   position: relative;
+  border: 7px solid $white;
 
   @media (min-width: $tablet-width) {
-    padding: 65px;
+    padding: 58px;
   }
 
   @media (min-width: $desktop-width) {
     width: 360px;
-    padding: 65px 82px;
+    padding: 58px 75px;
   }
 }
 
@@ -35,6 +36,11 @@
   @media (min-width: $desktop-width) {
     margin: 0;
   }
+}
+
+.catalog__item:hover,
+.catalog__item:focus-within {
+  border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%) 1;
 }
 
 .catalog__title {
