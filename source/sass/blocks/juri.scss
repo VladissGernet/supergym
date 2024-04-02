@@ -34,6 +34,11 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 46px;
+    width: 600px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
   }
 }
 
