@@ -6,6 +6,18 @@ initPriceFilter();
 
 import { Swiper } from './vendor/swiper.js';
 
+//CONSTANTS
+
+const TABLET_WIDTH = 768;
+const DESKTOP_WIDTH = 1366;
+const SlidesPerView = {
+  MOBILE: 1,
+  TABLET: 2,
+  DESKTOP: 4
+};
+
+//module swiper-juri
+
 const swiperJuri = new Swiper('.swiper-juri', {
   loop: true,
   navigation: {
@@ -14,19 +26,16 @@ const swiperJuri = new Swiper('.swiper-juri', {
   },
 });
 
-const TABLET_WIDTH = 768;
-const DESKTOP_WIDTH = 1366;
-
 window.addEventListener('resize', () => {
   switch (true) {
     case window.innerWidth < TABLET_WIDTH:
-      swiperJuri.params.slidesPerView = 1;
+      swiperJuri.params.slidesPerView = SlidesPerView.MOBILE;
       break;
     case window.innerWidth >= TABLET_WIDTH && window.innerWidth < DESKTOP_WIDTH:
-      swiperJuri.params.slidesPerView = 2;
+      swiperJuri.params.slidesPerView = SlidesPerView.TABLET;
       break;
     case window.innerWidth >= DESKTOP_WIDTH:
-      swiperJuri.params.slidesPerView = 4;
+      swiperJuri.params.slidesPerView = SlidesPerView.DESKTOP;
   }
   swiperJuri.update();
 });
