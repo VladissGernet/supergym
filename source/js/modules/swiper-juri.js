@@ -16,23 +16,26 @@ const swiperJuri = new Swiper('.swiper-juri', {
   initialSlide: window.innerWidth < TABLET_WIDTH ? JuriInitialSlide.MOBILE : JuriInitialSlide.OTHER,
 });
 
-const checkWindowWidth = () => {
+const checkWindowWidthJuri = () => {
   switch (true) {
     case window.innerWidth < TABLET_WIDTH:
       swiperJuri.params.slidesPerView = JuriSlidesPerView.MOBILE;
+      swiperJuri.allowTouchMove = true;
       break;
     case window.innerWidth >= TABLET_WIDTH && window.innerWidth < DESKTOP_WIDTH:
       swiperJuri.params.slidesPerView = JuriSlidesPerView.TABLET;
+      swiperJuri.allowTouchMove = false;
       break;
     case window.innerWidth >= DESKTOP_WIDTH:
       swiperJuri.params.slidesPerView = JuriSlidesPerView.DESKTOP;
+      swiperJuri.allowTouchMove = false;
   }
   swiperJuri.update();
 };
 
 const initSwiperJuri = () => {
-  checkWindowWidth();
-  window.addEventListener('resize', checkWindowWidth);
+  checkWindowWidthJuri();
+  window.addEventListener('resize', checkWindowWidthJuri);
 };
 
 export { initSwiperJuri };
