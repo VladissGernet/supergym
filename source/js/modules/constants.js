@@ -29,6 +29,7 @@ const JuriInitialSlide = {
   MOBILE: 2,
   OTHER: 0,
 };
+const REVIEWS_SPACE_BETWEEN = 200;
 
 export {
   ABOUT_VIDEO_LINK,
@@ -38,4 +39,5 @@ export {
   DESKTOP_WIDTH,
   JuriSlidesPerView,
   JuriInitialSlide,
+  REVIEWS_SPACE_BETWEEN
 };
