@@ -567,12 +567,18 @@
   line-height: 20px;
   margin: 0;
   max-height: 0;
-  transition: all 0.5s;
+  max-width: 290px;
+  transition: margin 0.5s, max-height 0.2s;
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    max-width: 559px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 660px;
   }
 }
 
@@ -588,12 +594,10 @@
 
   @media (min-width: $tablet-width) {
     margin-top: 10px;
-    max-width: 559px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 23px;
-    max-width: 660px;
   }
 }
 

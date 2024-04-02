@@ -36,6 +36,10 @@
   color: $white;
 }
 
+.tab-button--active {
+  pointer-events: none;
+}
+
 .tab-button:disabled {
   color: $chinese-silver;
   outline-color: rgb($dark-cerulean-blue, 0.2);
