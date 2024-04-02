@@ -84,11 +84,12 @@
 .juri__description:hover,
 .juri__description:focus {
   background-color: rgb($dark-cerulean-blue, 0.8);
-  padding: 46px 20px 20px;
   min-height: 280px;
+  padding: 46px 20px 13px;
 
   @media (min-width: $tablet-width) {
     min-height: 300px;
+    padding: 46px 20px 20px;
   }
 }
 
