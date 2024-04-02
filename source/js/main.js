@@ -26,8 +26,8 @@ const JuriInitialSlide = {
 const swiperJuri = new Swiper('.swiper-juri', {
   loop: true,
   navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-juri-button-next',
+    prevEl: '.swiper-juri-button-prev',
   },
   initialSlide: window.innerWidth < TABLET_WIDTH ? 2 : 0,
 });

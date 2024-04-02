@@ -3,6 +3,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 30px 0 60px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -84,15 +85,17 @@
   display: none;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
     display: flex;
     justify-content: space-between;
-    top: 55.3%;
+    top: 51.3%;
     left: 50%;
     width: 716px;
+    transform: translateX(-50%);
   }
 
   @media (min-width: $desktop-width) {
-    width: 1307px;
-    top: 54.7%;
+    width: 1310px;
+    top: 53%;
   }
 }
