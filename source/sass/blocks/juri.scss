@@ -73,11 +73,73 @@
   z-index: 1;
   width: 227px;
   padding: 234px 20px 24px;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     width: 260px;
     padding: 254px 20px 24px;
   }
+}
+
+.juri__description:hover {
+  background-color: rgb($dark-cerulean-blue, 0.8);
+  padding: 46px 20px 20px;
+  min-height: 280px;
+
+  @media (min-width: $tablet-width) {
+    min-height: 300px;
+  }
+}
+
+.juri__type {
+  display: none;
+  font-family: $general-font;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+  color: $french-gray;
+  margin: 7px 0 0;
+}
+
+.juri__description:hover .juri__type {
+  display: block;
+}
+
+.juri__advantages {
+  display: none;
+  font-family: $general-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin: 34px 0 0;
+  padding-left: 46px;
+  color: $white;
+  list-style-type: none;
+  position: relative;
+}
+
+.juri__advantage {
+  position: relative;
+}
+
+.juri__advantage::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 6px;
+  left: -16px;
+  top: 7px;
+  background-color: $white;
+  border-radius: 50%;
+}
+
+.juri__advantage:not(:last-child) {
+  margin-bottom: 12px;
+}
+
+.juri__description:hover .juri__advantages {
+  display: block;
 }
 
 .juri__name {
