@@ -81,7 +81,8 @@
   }
 }
 
-.juri__description:hover {
+.juri__description:hover,
+.juri__description:focus {
   background-color: rgb($dark-cerulean-blue, 0.8);
   padding: 46px 20px 20px;
   min-height: 280px;
@@ -102,7 +103,8 @@
   margin: 7px 0 0;
 }
 
-.juri__description:hover .juri__type {
+.juri__description:hover .juri__type,
+.juri__description:focus .juri__type {
   display: block;
 }
 
@@ -138,7 +140,8 @@
   margin-bottom: 12px;
 }
 
-.juri__description:hover .juri__advantages {
+.juri__description:hover .juri__advantages,
+.juri__description:focus .juri__advantages {
   display: block;
 }
 
