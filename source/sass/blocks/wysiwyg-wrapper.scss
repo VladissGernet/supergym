@@ -621,6 +621,7 @@
 .wysiwyg-wrapper--reviews li {
   background-color: $bahama-blue;
   padding: 30px 25px 29px;
+  min-height: 328px;
 
   @media (min-width: $tablet-width) {
     width: 500px;
@@ -631,6 +632,7 @@
       "image text";
     gap: 19px 40px;
     padding: 40px 30px 40px;
+    min-height: 242px;
   }
 
   @media (min-width: $desktop-width) {
