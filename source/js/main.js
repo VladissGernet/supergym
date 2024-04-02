@@ -10,8 +10,13 @@ import { Swiper } from './vendor/swiper.js';
 
 const TABLET_WIDTH = 768;
 const DESKTOP_WIDTH = 1366;
-const SlidesPerView = {
+const JuriSlidesPerView = {
   MOBILE: 1,
+  TABLET: 2,
+  DESKTOP: 4
+};
+const JuriInitialSlide = {
+  MOBILE: 2,
   TABLET: 2,
   DESKTOP: 4
 };
@@ -20,6 +25,7 @@ const SlidesPerView = {
 
 const swiperJuri = new Swiper('.swiper-juri', {
   loop: true,
+  initialSlide: JuriInitialSlide.MOBILE,
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -29,13 +35,13 @@ const swiperJuri = new Swiper('.swiper-juri', {
 window.addEventListener('resize', () => {
   switch (true) {
     case window.innerWidth < TABLET_WIDTH:
-      swiperJuri.params.slidesPerView = SlidesPerView.MOBILE;
+      swiperJuri.params.slidesPerView = JuriSlidesPerView.MOBILE;
       break;
     case window.innerWidth >= TABLET_WIDTH && window.innerWidth < DESKTOP_WIDTH:
-      swiperJuri.params.slidesPerView = SlidesPerView.TABLET;
+      swiperJuri.params.slidesPerView = JuriSlidesPerView.TABLET;
       break;
     case window.innerWidth >= DESKTOP_WIDTH:
-      swiperJuri.params.slidesPerView = SlidesPerView.DESKTOP;
+      swiperJuri.params.slidesPerView = JuriSlidesPerView.DESKTOP;
   }
   swiperJuri.update();
 });
