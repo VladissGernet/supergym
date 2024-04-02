@@ -18,9 +18,24 @@ const InitialPriceValues = {
   DAYTIME: 1700,
   FULL_DAY: 2700
 };
+const TABLET_WIDTH = 768;
+const DESKTOP_WIDTH = 1366;
+const JuriSlidesPerView = {
+  MOBILE: 1,
+  TABLET: 2,
+  DESKTOP: 4
+};
+const JuriInitialSlide = {
+  MOBILE: 2,
+  OTHER: 0,
+};
 
 export {
   ABOUT_VIDEO_LINK,
   InitialPriceValues,
-  PRICE_CURRENCY
+  PRICE_CURRENCY,
+  TABLET_WIDTH,
+  DESKTOP_WIDTH,
+  JuriSlidesPerView,
+  JuriInitialSlide,
 };
