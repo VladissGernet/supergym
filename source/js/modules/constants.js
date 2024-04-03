@@ -30,6 +30,17 @@ const JuriInitialSlide = {
   OTHER: 0,
 };
 const REVIEWS_SPACE_BETWEEN = 200;
+const BASE_URL = 'https://echo.htmlacademy.ru/';
+const ERROR_TEXT = 'Не удалось отправить форму. Попробуйте ещё раз';
+const SubmitButtonText = {
+  IDLE: 'Отправить',
+  SENDING: 'Отправка...'
+};
+const ErrorTexts = {
+  EMPTY: 'Обязательное к заполнению поле',
+  NAME: 'Только буквы и пробелы',
+  PHONE: 'Не должно содержать букв'
+};
 
 export {
   ABOUT_VIDEO_LINK,
@@ -39,5 +50,9 @@ export {
   DESKTOP_WIDTH,
   JuriSlidesPerView,
   JuriInitialSlide,
-  REVIEWS_SPACE_BETWEEN
+  REVIEWS_SPACE_BETWEEN,
+  BASE_URL,
+  ERROR_TEXT,
+  SubmitButtonText,
+  ErrorTexts,
 };
