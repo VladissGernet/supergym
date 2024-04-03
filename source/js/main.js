@@ -9,3 +9,54 @@ initPriceFilter();
 initSwiperJuri();
 initSwiperReviews();
 initFaqList();
+
+const BASE_URL = 'https://echo.htmlacademy.ru/';
+const ERROR_TEXT = 'Не удалось отправить форму. Попробуйте ещё раз';
+
+const SubmitButtonText = {
+  IDLE: 'Отправить',
+  SENDING: 'Отправка...'
+};
+
+const form = document.querySelector('.form');
+const submitButton = form.querySelector('.form__submit');
+const nameInput = form.querySelector('[name="name"]');
+const phoneInput = form.querySelector('[name="phone"]');
+
+const blockSubmitButton = () => {
+  submitButton.disabled = true;
+  submitButton.textContent = SubmitButtonText.SENDING;
+};
+
+const unblockSubmitButton = () => {
+  submitButton.disabled = false;
+  submitButton.textContent = SubmitButtonText.IDLE;
+};
+
+const sendData = (body) =>
+  fetch(`${BASE_URL}`, { method: 'POST', body })
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error();
+      }
+      return response.json();
+    })
+    .catch(() => {
+      throw new Error(ERROR_TEXT);
+    })
+    .finally(unblockSubmitButton);
+
+
+form.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  const checkName = (nameInputValue) => /^[A-Za-zА-Яа-яЁ-ё ]+$/.test(nameInputValue);
+  const checkPhone = (phoneInputValue) => /^[^A-Za-zА-Яа-яЁ-ё]+$/.test(phoneInputValue);
+
+
+  // blockSubmitButton();
+  // sendData(new FormData(evt.target));
+  //what will send
+  // for (const [key, value] of formData) {
+  //   console.log(`${key} - ${value}`);
+  // }
+});
