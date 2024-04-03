@@ -1,6 +1,6 @@
 const videoContainer = document.querySelector('.about__video-container');
-const previewVideo = document.querySelector('.about__video-preview');
-const playButton = document.querySelector('.about__play-button');
+const previewVideo = videoContainer.querySelector('.about__video-preview');
+const playButton = videoContainer.querySelector('.about__play-button');
 
 import { ABOUT_VIDEO_LINK } from './constants.js';
 
