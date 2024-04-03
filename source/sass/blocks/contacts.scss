@@ -123,7 +123,7 @@
   opacity: 0.5;
 }
 
-.contacts__link:focus {
+.contacts__link:focus-visible {
   outline: 2px solid $dark-cerulean-blue;
   outline-offset: 4px;
 }

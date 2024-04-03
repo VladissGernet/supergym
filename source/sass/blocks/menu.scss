@@ -22,6 +22,24 @@
   color: $white;
 }
 
+.menu__link:hover {
+  opacity: 0.5;
+}
+
+.menu__link:focus-visible {
+  outline: 2px solid $white;
+  outline-offset: 4px;
+}
+
+.menu__link:active {
+  opacity: 0.3;
+}
+
+.menu__link:disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
+
 // PixelPerfect fix
 .menu__item:nth-child(3) {
   @media (max-width: $mobile-width) {

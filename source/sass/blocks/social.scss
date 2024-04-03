@@ -21,3 +21,21 @@
   height: 25px;
   border-radius: 50%;
 }
+
+.social__link:hover {
+  opacity: 0.5;
+}
+
+.social__link:focus-visible {
+  outline: 2px solid $white;
+  outline-offset: 4px;
+}
+
+.social__link:active {
+  opacity: 0.3;
+}
+
+.social__link:disabled {
+  pointer-events: none;
+  opacity: 0.2;
+}
