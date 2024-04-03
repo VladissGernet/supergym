@@ -116,4 +116,24 @@
 .contacts__link {
   text-decoration: none;
   color: $dark-cerulean-blue;
+  outline: none;
+}
+
+.contacts__link:hover {
+  opacity: 0.5;
+}
+
+.contacts__link:focus {
+  outline: 2px solid $dark-cerulean-blue;
+  outline-offset: 4px;
+}
+
+.contacts__link:active {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.contacts__link:disabled {
+  pointer-events: none;
+  opacity: 0.2;
 }
