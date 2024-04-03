@@ -26,8 +26,8 @@
 
 .input:focus {
   outline: 1px solid $white;
-  outline-offset: 4px;
-  border: none;
+  outline-offset: 5px;
+  border-bottom-color: transparent;
 
   @media (min-width: $tablet-width) {
     outline-width: 2px;
@@ -51,13 +51,27 @@
   color: rgb($white, 0.4);
 }
 
+.input:focus::placeholder {
+  color: transparent;
+}
+
 // Error condition
 
-.input:invalid {
+.input:not(:placeholder-shown):invalid {
   color: $white;
   border-bottom: 1px solid $torch-red;
 
   @media (min-width: $tablet-width) {
     border-bottom-width: 2px;
   }
+}
+
+.input::-webkit-inner-spin-button,
+.input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input {
+  -moz-appearance: textfield;
+  appearance: none;
 }
