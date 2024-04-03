@@ -21,7 +21,9 @@ const SubmitButtonText = {
 const form = document.querySelector('.form');
 const submitButton = form.querySelector('.form__submit');
 const nameInput = form.querySelector('[name="name"]');
+const nameInputError = form.querySelector('[name="name"] + span');
 const phoneInput = form.querySelector('[name="phone"]');
+const phoneInputError = form.querySelector('[name="phone"] + span');
 
 const blockSubmitButton = () => {
   submitButton.disabled = true;
@@ -52,7 +54,10 @@ form.addEventListener('submit', (evt) => {
   const checkName = (nameInputValue) => /^[A-Za-zА-Яа-яЁ-ё ]+$/.test(nameInputValue);
   const checkPhone = (phoneInputValue) => /^[^A-Za-zА-Яа-яЁ-ё]+$/.test(phoneInputValue);
 
-
+  nameInput.classList.add('input--invalid');
+  nameInputError.style.display = 'block';
+  phoneInput.classList.add('input--invalid');
+  phoneInputError.style.display = 'block';
   // blockSubmitButton();
   // sendData(new FormData(evt.target));
   //what will send

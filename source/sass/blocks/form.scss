@@ -18,6 +18,7 @@
       "name phone"
       "submit submit";
     gap: 35px 30px;
+    grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
@@ -69,6 +70,17 @@
     grid-area: phone;
     margin: 2px 0 0;
   }
+}
+
+.form__field-error {
+  font-family: $general-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: $torch-red;
+  margin-top: 2px;
+  display: none;
+  margin-bottom: -24px;
 }
 
 .form__control {
