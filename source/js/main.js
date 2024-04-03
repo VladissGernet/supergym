@@ -48,20 +48,26 @@ const sendData = (body) =>
     })
     .finally(unblockSubmitButton);
 
+const checkNameValue = (nameInputValue) => /^[A-Za-zА-Яа-яЁ-ё ]+$/.test(nameInputValue);
+const checkPhoneValue = (phoneInputValue) => /^[^A-Za-zА-Яа-яЁ-ё]+$/.test(phoneInputValue);
+const checkField = (field, errorElement, fieldValue) => {
+  if (fieldValue === false) {
+    field.classList.add('input--invalid');
+    errorElement.style.display = 'block';
+  } else {
+    field.classList.remove('input--invalid');
+    errorElement.style.display = 'none';
+  }
+};
 
 form.addEventListener('submit', (evt) => {
   evt.preventDefault();
-  const checkName = (nameInputValue) => /^[A-Za-zА-Яа-яЁ-ё ]+$/.test(nameInputValue);
-  const checkPhone = (phoneInputValue) => /^[^A-Za-zА-Яа-яЁ-ё]+$/.test(phoneInputValue);
-
-  nameInput.classList.add('input--invalid');
-  nameInputError.style.display = 'block';
-  phoneInput.classList.add('input--invalid');
-  phoneInputError.style.display = 'block';
-  // blockSubmitButton();
-  // sendData(new FormData(evt.target));
-  //what will send
-  // for (const [key, value] of formData) {
-  //   console.log(`${key} - ${value}`);
-  // }
+  const checkedName = checkNameValue(nameInput.value);
+  const checkedPhone = checkPhoneValue(phoneInput.value);
+  checkField(nameInput, nameInputError, checkedName);
+  checkField(phoneInput, phoneInputError, checkedPhone);
+  if (checkedName && checkedPhone) {
+    blockSubmitButton();
+    sendData(new FormData(evt.target));
+  }
 });
