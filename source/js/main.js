@@ -10,12 +10,17 @@ initSwiperJuri();
 initSwiperReviews();
 initFaqList();
 
+// Constants
 const BASE_URL = 'https://echo.htmlacademy.ru/';
 const ERROR_TEXT = 'Не удалось отправить форму. Попробуйте ещё раз';
-
 const SubmitButtonText = {
   IDLE: 'Отправить',
   SENDING: 'Отправка...'
+};
+const ErrorTexts = {
+  EMPTY: 'Обязательное к заполнению поле',
+  NAME: 'Только буквы и пробелы',
+  PHONE: 'Не должно содержать букв'
 };
 
 const form = document.querySelector('.form');
@@ -29,7 +34,6 @@ const blockSubmitButton = () => {
   submitButton.disabled = true;
   submitButton.textContent = SubmitButtonText.SENDING;
 };
-
 const unblockSubmitButton = () => {
   submitButton.disabled = false;
   submitButton.textContent = SubmitButtonText.IDLE;
@@ -50,8 +54,14 @@ const sendData = (body) =>
 
 const checkNameValue = (nameInputValue) => /^[A-Za-zА-Яа-яЁ-ё ]+$/.test(nameInputValue);
 const checkPhoneValue = (phoneInputValue) => /^[^A-Za-zА-Яа-яЁ-ё]+$/.test(phoneInputValue);
-const checkField = (field, errorElement, fieldValue) => {
-  if (fieldValue === false) {
+
+const checkField = (field, errorElement, fieldCheckResult, errorText) => {
+  if (fieldCheckResult === false) {
+    if (field.value.length === 0) {
+      errorElement.textContent = ErrorTexts.EMPTY;
+    } else {
+      errorElement.textContent = errorText;
+    }
     field.classList.add('input--invalid');
     errorElement.style.display = 'block';
   } else {
@@ -60,14 +70,18 @@ const checkField = (field, errorElement, fieldValue) => {
   }
 };
 
+// Disable default form requirements
+nameInput.required = false;
+phoneInput.required = false;
+
 form.addEventListener('submit', (evt) => {
   evt.preventDefault();
   const checkedName = checkNameValue(nameInput.value);
   const checkedPhone = checkPhoneValue(phoneInput.value);
-  checkField(nameInput, nameInputError, checkedName);
-  checkField(phoneInput, phoneInputError, checkedPhone);
+  checkField(nameInput, nameInputError, checkedName, ErrorTexts.NAME);
+  checkField(phoneInput, phoneInputError, checkedPhone, ErrorTexts.PHONE);
   if (checkedName && checkedPhone) {
-    blockSubmitButton();
-    sendData(new FormData(evt.target));
+    // blockSubmitButton();
+    // sendData(new FormData(evt.target));
   }
 });
