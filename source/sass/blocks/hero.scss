@@ -109,6 +109,10 @@
   }
 }
 
+.hero__feature {
+  max-width: 113px;
+}
+
 .hero__feature:not(:last-child) {
   @media (min-width: $tablet-width) {
     margin-bottom: 2px;
