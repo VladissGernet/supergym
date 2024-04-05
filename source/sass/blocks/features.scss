@@ -21,7 +21,8 @@
   line-height: 32px;
   text-align: center;
   color: $dark-cerulean-blue;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 230px;
 
   @media (min-width: $tablet-width) {
     font-size: 42px;
