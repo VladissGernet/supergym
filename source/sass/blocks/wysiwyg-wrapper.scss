@@ -40,28 +40,6 @@
   text-align: center;
 }
 
-.wysiwyg-wrapper--features ul {
-  @include normal-list;
-  margin-top: 29px;
-
-  @media (min-width: $tablet-width) {
-    display: grid;
-    grid-template-columns: repeat(2, 324px);
-    gap: 39px 30px;
-    width: 768px;
-    margin: 49px auto 0;
-    padding: 0 45px;
-  }
-
-  @media (min-width: $desktop-width) {
-    grid-template-columns: repeat(3, 1fr);
-    width: 1160px;
-    grid-auto-flow: dense;
-    padding: 0;
-    gap: 78px 40px;
-  }
-}
-
 .wysiwyg-wrapper--features li {
   display: grid;
   padding: 10px 0;
