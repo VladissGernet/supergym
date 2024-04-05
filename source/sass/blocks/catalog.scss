@@ -12,8 +12,7 @@
 
 .catalog__item {
   background-color: $white;
-  padding: 43px 41px;
-  position: relative;
+  padding: 43px 20px;
   border: 7px solid $white;
 
   @media (min-width: $tablet-width) {
@@ -90,36 +89,24 @@
   line-height: 150%;
   text-align: center;
   color: $whisper;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -52%);
+  margin-bottom: -34px;
 
   @media (min-width: $tablet-width) {
     font-size: 100px;
-    transform: translate(-50%, -50%);
   }
 }
 
 .catalog__value {
-  position: relative;
   font-family: $general-font;
   font-size: 48px;
   font-weight: 700;
   line-height: 150%;
   color: $resolution-blue;
-  margin: 85px auto 0;
-  z-index: 1;
-  position: relative;
+  margin: 0 auto;
   text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 60px;
-    margin-top: 82px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 78px;
   }
 }
 
@@ -133,7 +120,8 @@
 }
 
 .catalog__button {
-  margin-top: 28px;
+  margin: 28px auto 0;
+  width: 195px;
 
   @media (min-width: $tablet-width) {
     margin-top: 22px;
