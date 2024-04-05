@@ -5,12 +5,24 @@
   line-height: 14px;
   color: $white;
   text-transform: uppercase;
-  text-underline-offset: 7px;
+  text-decoration: none;
   outline: none;
   padding: 10px;
   border: 1px solid transparent;
   transition: all 0.2s;
   display: block;
+  position: relative;
+  text-align: center;
+}
+
+.link::before {
+  position: absolute;
+  content: "";
+  width: calc(100% - 20px);
+  height: 1px;
+  left: 10px;
+  bottom: 5px;
+  background-color: $white;
 }
 
 .link:hover {
@@ -19,13 +31,19 @@
 
 .link:focus {
   border-color: $white;
-  text-decoration: none;
+}
+
+.link:focus::before {
+  background-color: transparent;
 }
 
 .link:active {
   border-color: transparent;
-  text-decoration: underline;
   color: $white;
+}
+
+.link:active::before {
+  background-color: transparent;
 }
 
 .link:disabled {
@@ -38,19 +56,29 @@
   color: $bahama-blue;
 }
 
+.link--dark::before {
+  background-color: $bahama-blue;
+}
+
 .link--dark:hover {
   color: rgb($bahama-blue, 0.8);
 }
 
 .link--dark:focus {
   border-color: $bahama-blue;
-  text-decoration: none;
+}
+
+.link--dark:focus::before {
+  background-color: $bahama-blue;
 }
 
 .link--dark:active {
   border-color: transparent;
-  text-decoration: underline;
   color: $bahama-blue;
+}
+
+.link--dark:active::before {
+  background-color: $bahama-blue;
 }
 
 .link--dark:disabled {
