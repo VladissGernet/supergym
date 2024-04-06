@@ -3,6 +3,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 60px 0 53px;
+
+    @-moz-document url-prefix() {
+      padding-bottom: 61px;
+    }
   }
 }
 
