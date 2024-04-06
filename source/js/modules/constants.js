@@ -6,7 +6,7 @@ allow="accelerometer; autoplay; clipboard-write; encrypted-media;
 gyroscope; picture-in-picture; web-share"
 referrerpolicy="strict-origin-when-cross-origin"
 allowfullscreen></iframe>
- `;
+  `;
 const PRICE_CURRENCY = `
 <svg class="catalog__currency" width="24" height="33"
 aria-label="₽">
