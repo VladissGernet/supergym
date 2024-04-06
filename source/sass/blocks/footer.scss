@@ -38,6 +38,10 @@
     grid-area: menu;
     margin: 2px 0 0;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .footer__social {

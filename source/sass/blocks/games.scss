@@ -1,5 +1,5 @@
 .games {
-  padding: 25px 0;
+  padding: 26px 0;
   color: $white;
 
   @media (min-width: $tablet-width) {
@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 100px;
+    padding-top: 101px;
     padding-bottom: 100px;
   }
 }
@@ -24,7 +24,7 @@
 }
 
 .games__content {
-  padding: 40px;
+  padding: 40px 40px 41px;
   background-color: $rogue;
   display: grid;
   grid-template-areas:
@@ -43,7 +43,6 @@
   @media (min-width: $desktop-width) {
     padding: 58px 80px 98px;
     align-items: start;
-    row-gap: 24px;
     column-gap: 55px;
     grid-template-columns: auto minmax(95px, 1fr);
   }
@@ -85,6 +84,7 @@
 
   @media (min-width: $desktop-width) {
     max-width: 340px;
+    margin-top: 13px;
   }
 }
 
