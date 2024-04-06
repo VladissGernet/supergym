@@ -13,7 +13,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-areas:
-      "title  title"
+      "title title"
       "advert list";
     grid-template-columns: 560px 1fr;
     align-items: start;
@@ -57,7 +57,7 @@
     padding: 0;
     grid-template-areas:
       "wysiwyg image"
-      "link    image";
+      "link image";
     align-items: start;
     grid-template-rows: 1fr auto;
   }
@@ -96,10 +96,6 @@
 .offers__image-wrapper {
   display: block;
   margin-top: 24px;
-
-  @-moz-document url-prefix() {
-    margin-top: 25px;
-  }
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -153,10 +149,6 @@
   border-image: linear-gradient(151deg, #ed0233 0%, #003eb7 100%) 1;
   padding: 21px 21px 14px;
 
-  @-moz-document url-prefix() {
-    padding-bottom: 15px;
-  }
-
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -167,10 +159,6 @@
 
 .offers__item:not(:last-child) {
   margin-bottom: 30px;
-
-  @-moz-document url-prefix() {
-    margin-bottom: 31px;
-  }
 
   @media (min-width: $tablet-width) {
     margin: 0;

@@ -14,8 +14,8 @@
     padding: 0;
     display: grid;
     grid-template-areas:
-      "title  title"
-      "name   phone"
+      "title title"
+      "name phone"
       "submit submit";
     gap: 35px 30px;
     grid-template-columns: 1fr 1fr;
@@ -92,10 +92,6 @@
   display: block;
   width: 100%;
   padding: 22px 20px;
-
-  @-moz-document url-prefix() {
-    margin-top: 37px;
-  }
 
   @media (min-width: $tablet-width) {
     grid-area: submit;
