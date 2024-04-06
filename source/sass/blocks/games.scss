@@ -3,7 +3,7 @@
   color: $white;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0 30px;
+    padding: 61px 0 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,7 +37,7 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: auto minmax(100px, 1fr);
-    row-gap: 10px;
+    row-gap: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -79,7 +79,7 @@
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-    margin: 0;
+    margin: 7px 0 0;
     max-width: 220px;
   }
 
@@ -108,7 +108,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    padding-top: 25px;
+    padding-top: 26px;
     padding-bottom: 25px;
     align-self: flex-end;
   }
