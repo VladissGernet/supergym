@@ -39,4 +39,3 @@ const initSwiperJuri = () => {
 };
 
 export { initSwiperJuri };
-
