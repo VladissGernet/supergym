@@ -67,6 +67,10 @@
 
 .faq__item {
   max-width: 140px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 162px;
+  }
 }
 
 .faq__button {

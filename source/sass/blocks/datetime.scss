@@ -138,6 +138,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 1px;
     display: block;
+    max-width: 100px;
   }
 
   @media (min-width: $desktop-width) {

@@ -173,6 +173,7 @@
     width: 320px;
     margin: 0 auto 1px;
     padding: 35px 0;
+    justify-items: center;
   }
 
   @media (min-width: $desktop-width) {
@@ -343,6 +344,7 @@
   @media (min-width: $tablet-width) {
     font-size: 24px;
     line-height: 24px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -361,7 +363,7 @@
   @media (min-width: $tablet-width) {
     font-size: 70px;
     line-height: 70px;
-    margin-top: 20px;
+    margin: 20px 0 0;
   }
 }
 
