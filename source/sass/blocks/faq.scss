@@ -71,6 +71,10 @@
   @media (min-width: $tablet-width) {
     max-width: 162px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 260px;
+  }
 }
 
 .faq__button {
