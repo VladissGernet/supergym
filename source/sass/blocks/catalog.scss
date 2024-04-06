@@ -1,5 +1,6 @@
 .catalog {
   @include normal-list;
+
   max-width: 380px;
 
   @media (min-width: $desktop-width) {
@@ -14,6 +15,10 @@
   background-color: $white;
   padding: 43px 20px;
   border: 7px solid $white;
+
+  @-moz-document url-prefix() {
+    padding-top: 44px;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 58px;
@@ -89,7 +94,7 @@
   line-height: 150%;
   text-align: center;
   color: $whisper;
-  margin-bottom: -34px;
+  margin: 31px 0 -66px;
 
   @media (min-width: $tablet-width) {
     font-size: 100px;
@@ -117,6 +122,10 @@
 
 .catalog__currency {
   display: inline;
+
+  @-moz-document url-prefix() {
+    margin-top: 20px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 30px;

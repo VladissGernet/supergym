@@ -39,6 +39,7 @@
 
 .features__list {
   @include normal-list;
+
   margin-top: 29px;
 
   @media (min-width: $tablet-width) {

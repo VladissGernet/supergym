@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 0 100px;
+    padding: 100px 0;
   }
 }
 
@@ -16,7 +16,7 @@
     display: grid;
     grid-template-areas:
       "title title"
-      "list accordion";
+      "list  accordion";
     column-gap: 40px;
     row-gap: 50px;
     grid-template-columns: 260px 860px;
@@ -47,6 +47,7 @@
 
 .faq__list {
   @include normal-list;
+
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;

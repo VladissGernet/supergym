@@ -59,7 +59,7 @@
   height: 58px;
 }
 
-.play-button:disabled:before {
+.play-button:disabled::before {
   background-image: none;
   background-color: transparent;
 }

@@ -28,9 +28,9 @@
   background-color: $rogue;
   display: grid;
   grid-template-areas:
-    "title datetime"
+    "title       datetime"
     "description description"
-    "button button";
+    "button      button";
   column-gap: 20px;
   grid-template-columns: 1fr minmax(56px, auto);
   align-items: start;
@@ -105,6 +105,10 @@
   margin-top: 16px;
   padding-top: 22px;
   padding-bottom: 22px;
+
+  @-moz-document url-prefix() {
+    margin-top: 17px;
+  }
 
   @media (min-width: $tablet-width) {
     margin: 0;

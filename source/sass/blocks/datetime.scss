@@ -46,6 +46,10 @@
   left: 0;
   top: 0;
   background-color: $white;
+
+  @-moz-document url-prefix() {
+    top: 1px;
+  }
 }
 
 .datetime__day {
@@ -156,4 +160,8 @@
   left: 0;
   top: 0;
   background-color: $white;
+
+  @-moz-document url-prefix() {
+    top: 1px;
+  }
 }

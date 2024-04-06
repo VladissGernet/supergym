@@ -97,7 +97,7 @@
 .wysiwyg-wrapper--features b {
   background-image: linear-gradient(129deg, #d10a42 0%, #0041ca 50%);
   background-clip: text;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 64px;
   font-weight: 700;
@@ -190,7 +190,7 @@
 .wysiwyg-wrapper--features li:nth-child(5n + 3) b {
   background: none;
   background-clip: border-box;
-  -webkit-background-clip: border-box;
+  background-clip: border-box;
   -webkit-text-fill-color: initial;
   color: $white;
 
@@ -383,7 +383,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
-    margin: 0 11px 0;
+    margin: 0 11px;
   }
 }
 
@@ -419,6 +419,7 @@
 // Accordion
 .wysiwyg-wrapper--accordion {
   @include normal-list;
+
   border-top: solid 1px $slate-gray;
 }
 
@@ -434,7 +435,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 23px 0 23px;
+    padding: 23px 0;
   }
 }
 
@@ -533,7 +534,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 23px 0 23px;
+    padding: 23px 0;
   }
 }
 
@@ -626,7 +627,7 @@
       "image title"
       "image text";
     gap: 19px 40px;
-    padding: 40px 30px 40px;
+    padding: 40px 30px;
     min-height: 242px;
   }
 

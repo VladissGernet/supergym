@@ -1,5 +1,6 @@
 .menu__list {
   @include normal-list;
+
   display: flex;
   flex-wrap: wrap;
   gap: 20px 36px;

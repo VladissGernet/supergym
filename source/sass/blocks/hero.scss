@@ -7,10 +7,10 @@
 .hero__container {
   display: grid;
   grid-template-areas:
-    ". town"
-    ". title"
+    ".        town"
+    ".        title"
     "features title"
-    "button button";
+    "button   button";
   grid-template-columns: auto 177px;
   align-items: start;
   padding-right: 14px;
@@ -19,11 +19,11 @@
   @media (min-width: $tablet-width) {
     grid-template-columns: 113px auto 324px;
     grid-template-areas:
-      ". town image"
-      ". title image"
-      "features title image"
-      ". button image"
-      ". . image";
+      ".        town   image"
+      ".        title  image"
+      "features title  image"
+      ".        button image"
+      ".        .      image";
     padding-right: 45px;
     width: 768px;
     margin: 0 auto;
@@ -94,12 +94,17 @@
 
 .hero__features {
   @include normal-list;
+
   grid-area: features;
   font-family: $general-font;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   text-align: right;
+
+  @-moz-document url-prefix() {
+    margin-bottom: 1px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 25px;
