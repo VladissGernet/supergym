@@ -1,5 +1,6 @@
 .catalog {
   @include normal-list;
+
   max-width: 380px;
 
   @media (min-width: $desktop-width) {

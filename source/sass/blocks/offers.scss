@@ -13,7 +13,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-areas:
-      "title title"
+      "title  title"
       "advert list";
     grid-template-columns: 560px 1fr;
     align-items: start;
@@ -57,7 +57,7 @@
     padding: 0;
     grid-template-areas:
       "wysiwyg image"
-      "link image";
+      "link    image";
     align-items: start;
     grid-template-rows: 1fr auto;
   }

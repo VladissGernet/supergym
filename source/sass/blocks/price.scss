@@ -9,7 +9,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 100px 0 100px;
+    padding: 100px 0;
   }
 }
 
@@ -33,7 +33,7 @@
     background-size: 275px 328px;
     transform: rotate(150deg);
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("/img/price/barbell-pancakes-tablet@2x.png");
     }
   }
@@ -46,7 +46,7 @@
     background-image: url("/img/price/barbell-pancakes-desktop.png");
     background-size: 321px 384px;
 
-    @media (min-resolution: 2dppx) {
+    @media (resolution >= 2dppx) {
       background-image: url("/img/price/barbell-pancakes-desktop@2x.png");
     }
   }
@@ -120,7 +120,8 @@
   }
 }
 
-//PixelPerfect fix
+// PixelPerfect fix
+
 .price__control:last-child {
   @media (min-width: $tablet-width) {
     margin-left: 1px;

@@ -28,9 +28,9 @@
   background-color: $rogue;
   display: grid;
   grid-template-areas:
-    "title datetime"
+    "title       datetime"
     "description description"
-    "button button";
+    "button      button";
   column-gap: 20px;
   grid-template-columns: 1fr minmax(56px, auto);
   align-items: start;

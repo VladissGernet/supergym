@@ -1,6 +1,6 @@
 .form {
   background-color: $dark-cerulean-blue;
-  padding: 70px 0 70px;
+  padding: 70px 0;
 
   @media (min-width: $tablet-width) {
     padding: 60px 0;
@@ -14,8 +14,8 @@
     padding: 0;
     display: grid;
     grid-template-areas:
-      "title title"
-      "name phone"
+      "title  title"
+      "name   phone"
       "submit submit";
     gap: 35px 30px;
     grid-template-columns: 1fr 1fr;
