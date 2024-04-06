@@ -21,7 +21,7 @@
 
   @media (min-width: $desktop-width) {
     width: 360px;
-    padding: 58px 75px;
+    padding: 58px 30px;
   }
 }
 
@@ -95,6 +95,10 @@
     font-size: 100px;
     margin: 21px 0 -89px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 17px 0 -89px;
+  }
 }
 
 .catalog__value {
@@ -131,5 +135,6 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 18px;
+    width: 194px;
   }
 }
