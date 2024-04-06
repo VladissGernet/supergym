@@ -13,6 +13,13 @@
   }
 }
 
+.price__container {
+  @media (min-width: $tablet-width) {
+    z-index: 1;
+    position: relative;
+  }
+}
+
 .price::before {
   @media (min-width: $tablet-width) {
     content: "";
