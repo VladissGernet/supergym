@@ -51,11 +51,13 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
-  margin-top: 34px;
+  margin: 34px auto 0;
+  width: 290px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: repeat(4, 1fr);
     margin-top: 44px;
+    width: 678px;
   }
 
   @media (min-width: $desktop-width) {

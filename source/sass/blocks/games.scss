@@ -16,10 +16,13 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 378px;
+    width: 768px;
+    margin: 0 auto;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 660px;
+    width: unset;
   }
 }
 
