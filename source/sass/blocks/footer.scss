@@ -21,7 +21,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 130px 1fr 95px;
-    gap: 167px;
+    gap: 156px;
   }
 }
 
@@ -40,7 +40,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    margin: 1px;
   }
 }
 
