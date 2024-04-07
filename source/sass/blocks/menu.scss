@@ -1,9 +1,10 @@
 .menu__list {
   @include normal-list;
 
+  margin: 0 -11px 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px 36px;
+  gap: 20px 14.5px;
 
   @media (min-width: $tablet-width) {
     gap: 20px 31px;
@@ -12,6 +13,12 @@
   @media (min-width: $desktop-width) {
     gap: 20px 83px;
   }
+}
+
+// PixelPerfect fix
+
+.menu__item:nth-child(3) {
+  transform: translateX(-1px);
 }
 
 .menu__link {
