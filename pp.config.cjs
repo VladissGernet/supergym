@@ -1,6 +1,6 @@
 const indexSections = [
-  { section: 'hero', misMatchThreshold: 0.3 },
-  // { section: 'about', misMatchThreshold: 0.3 },
+  // { section: 'hero', misMatchThreshold: 0.3 },
+  { section: 'about', misMatchThreshold: 0.3 },
   // { section: 'price', misMatchThreshold: 0.3 },
   // { section: 'games', misMatchThreshold: 0.3 },
   // { section: 'juri', misMatchThreshold: 0.3 },
