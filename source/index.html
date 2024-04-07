@@ -785,38 +785,29 @@
           <h2 class="reviews__title">Отзывы</h2>
         </div>
         <div class="reviews__swiper swiper swiper-reviews">
-          <div class="swiper-wrapper">
-            <!-- wysiwyg-wrapper - CMS обертка и swiper слайд. -->
-            <ul class="swiper-slide wysiwyg-wrapper wysiwyg-wrapper--reviews">
-              <li>
-                <img src="img/reviews/anna-orlova.jpg" width="68" height="68"
-                  alt="Анна Орлова.">
-                <h3>Анна Орлова</h3>
-                <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что
-                  в&nbsp;клубе всегда чисто, тренажёры обновляют, персонал
-                  дружелюбный. Зал&nbsp;просторный, даже&nbsp;в&nbsp;вечернее
-                  время
-                  нет&nbsp;очередей&raquo;</p>
-              </li>
-            </ul>
-            <ul
-              class="swiper-slide wysiwyg-wrapper wysiwyg-wrapper--reviews">
-              <li>
-                <img src="img/reviews/kristina-smirnova.jpg" width="68"
-                  height="68"
-                  alt="Кристина Смирнова.">
-                <h3>
-                  Кристина Смирнова
-                </h3>
-                <p>
-                  «Много лет посещаю данный зал. Отличные тренажёры,
-                  талантливые
-                  тренеры, есть детская комната. Часто проводят акции, цены
-                  доступные.»
-                </p>
-              </li>
-            </ul>
-          </div>
+          <!-- wysiwyg-wrapper - CMS обертка и swiper слайд. -->
+          <ul class="swiper-wrapper wysiwyg-wrapper wysiwyg-wrapper--reviews">
+            <li class="swiper-slide">
+              <img src="img/reviews/anna-orlova.jpg" width="68" height="68"
+                alt="Анна Орлова.">
+              <h3>Анна Орлова</h3>
+              <p>&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что
+                в&nbsp;клубе всегда чисто, тренажёры обновляют, персонал
+                дружелюбный. Зал&nbsp;просторный, даже&nbsp;в&nbsp;вечернее
+                время
+                нет&nbsp;очередей&raquo;</p>
+            </li>
+            <li class="swiper-slide">
+              <img src="img/reviews/kristina-smirnova.jpg" width="68"
+                height="68"
+                alt="Кристина Смирнова.">
+              <h3>Кристина Смирнова</h3>
+              <p>«Много лет посещаю данный зал. Отличные тренажёры,
+                талантливые
+                тренеры, есть детская комната. Часто проводят акции, цены
+                доступные.»</p>
+            </li>
+          </ul>
         </div>
         <div class="reviews__controls slider-controls">
           <button class="slider-controls__control swiper-reviews-button-prev"
@@ -855,53 +846,36 @@
                 required placeholder="Телефон">
               <span class="form__field-error">Не должно содержать букв</span>
             </label>
-            <button class="form__submit button" type="submit">
-              Отправить
-            </button>
+            <button class="form__submit button" type="submit">Отправить</button>
           </div>
         </form>
         <section class="contact-us__contacts contacts">
           <div class="contacts__container container">
-            <h3 class="contacts__title">
-              Контакты
-            </h3>
+            <h3 class="contacts__title">Контакты</h3>
             <dl class="contacts__list">
               <div class="contacts__content">
-                <dt class="contacts__term">
-                  Адрес:
-                </dt>
+                <dt class="contacts__term">Адрес:</dt>
                 <dd class="contacts__description">
-                  <address class="contacts__address">
-                    г. Омск, ул. 60 лет Октября, 7
-                  </address>
+                  <address class="contacts__address">г. Омск, ул. 60 лет
+                    Октября, 7</address>
                 </dd>
               </div>
               <div class="contacts__content">
-                <dt class="contacts__term">
-                  График работы:
-                </dt>
+                <dt class="contacts__term">График работы:</dt>
+                <dd class="contacts__description">Пн-Вс: с 8:00 до 22:00</dd>
+              </div>
+              <div class="contacts__content">
+                <dt class="contacts__term">Телефон:</dt>
                 <dd class="contacts__description">
-                  Пн-Вс: с 8:00 до 22:00
+                  <a class="contacts__link" href="tel:88005555555">8 800
+                    555-55-55</a>
                 </dd>
               </div>
               <div class="contacts__content">
-                <dt class="contacts__term">
-                  Телефон:
-                </dt>
+                <dt class="contacts__term">Email:</dt>
                 <dd class="contacts__description">
-                  <a class="contacts__link" href="tel:88005555555">
-                    8 800 555-55-55
-                  </a>
-                </dd>
-              </div>
-              <div class="contacts__content">
-                <dt class="contacts__term">
-                  Email:
-                </dt>
-                <dd class="contacts__description">
-                  <a class="contacts__link" href="mailto:oмск@supergym.ru">
-                    oмск@supergym.ru
-                  </a>
+                  <a class="contacts__link"
+                    href="mailto:oмск@supergym.ru">oмск@supergym.ru</a>
                 </dd>
               </div>
             </dl>
@@ -919,38 +893,26 @@
         <nav class="footer__menu menu">
           <ul class="menu__list">
             <li class="menu__item">
-              <a class="menu__link" href="#">
-                Услуги
-              </a>
+              <a class="menu__link" href="#">Услуги</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
-                Абонементы
-              </a>
+              <a class="menu__link" href="#">Абонементы</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
-                Акции
-              </a>
+              <a class="menu__link" href="#">Акции</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
-                Тренеры
-              </a>
+              <a class="menu__link" href="#">Тренеры</a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="#">
-                Расписание
-              </a>
+              <a class="menu__link" href="#">Расписание</a>
             </li>
           </ul>
         </nav>
         <ul class="footer__social social">
           <li class="social__item">
             <a class="social__link" href="https://htmlacademy.ru/">
-              <span class="visually-hidden">
-                Вконтакте.
-              </span>
+              <span class="visually-hidden">Вконтакте.</span>
               <svg class="social__icon" width="25" height="25">
                 <use href="/__spritemap#sprite-vk"></use>
               </svg>
@@ -958,9 +920,7 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="https://htmlacademy.ru/">
-              <span class="visually-hidden">
-                Одноклассники.
-              </span>
+              <span class="visually-hidden">Одноклассники.</span>
               <svg class="social__icon" width="25" height="25">
                 <use href="/__spritemap#sprite-ok"></use>
               </svg>
@@ -968,9 +928,7 @@
           </li>
           <li class="social__item">
             <a class="social__link" href="https://htmlacademy.ru/">
-              <span class="visually-hidden">
-                Reddit.
-              </span>
+              <span class="visually-hidden">Reddit.</span>
               <svg class="social__icon" width="25" height="25">
                 <use href="/__spritemap#sprite-reddit"></use>
               </svg>
