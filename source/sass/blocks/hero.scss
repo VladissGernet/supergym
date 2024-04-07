@@ -127,9 +127,9 @@
 
 .hero__button {
   grid-area: button;
-  margin-top: 47px;
+  margin-top: 48px;
   margin-right: 1px;
-  padding: 22px;
+  padding: 22px 22px 23px;
 
   @media (min-width: $tablet-width) {
     margin-top: 50px;

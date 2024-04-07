@@ -17,8 +17,7 @@
     "stylelint": "stylelint \"source/sass/**/*.scss\" --fix",
     "lint-js": "eslint source/js --fix",
     "ls-lint": "ls-lint",
-    "editorconfig": "editorconfig-cli",
-    "lint": "npm run lint-js && npm run stylelint && npm run lint-bem && npm run linthtml && npm run html-validate && npm run w3c && npm run ls-lint && npm run editorconfig"
+    "editorconfig": "editorconfig-cli"
   },
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "3.0.0",
