@@ -26,8 +26,8 @@
     position: absolute;
     width: 275px;
     height: 328px;
-    bottom: 12px;
-    right: -16px;
+    bottom: 11px;
+    right: -15px;
     background-image: url("/img/price/barbell-pancakes-tablet.png");
     background-repeat: no-repeat;
     background-size: 275px 328px;
@@ -39,8 +39,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    bottom: 11px;
-    right: -93px;
+    bottom: 10px;
+    right: -92px;
     width: 321px;
     height: 384px;
     background-image: url("/img/price/barbell-pancakes-desktop.png");
@@ -103,7 +103,7 @@
   border: none;
   outline: none;
   background-color: transparent;
-  padding: 18px 0;
+  padding: 18px 0 18.5px;
   transition: all 0.1s;
   cursor: pointer;
 
@@ -170,7 +170,7 @@
 }
 
 .price__catalog {
-  margin: 31px auto 0;
+  margin: 30px auto 0;
 
   @media (min-width: $tablet-width) {
     margin-top: 45px;
