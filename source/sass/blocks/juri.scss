@@ -31,7 +31,7 @@
 }
 
 .juri__swiper {
-  margin: 19px auto 0;
+  margin: 20px auto 0;
 
   @media (min-width: $tablet-width) {
     margin-top: 46px;
@@ -41,6 +41,10 @@
   @media (min-width: $desktop-width) {
     width: 1200px;
   }
+}
+
+.juri__swiper-list {
+  @include normal-list;
 }
 
 .juri__image-wrapper {
@@ -61,6 +65,7 @@
   width: 227px;
   height: 280px;
   display: block;
+  object-fit: cover;
 
   @media (min-width: $tablet-width) {
     width: 260px;
