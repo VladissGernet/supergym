@@ -120,14 +120,6 @@
   }
 }
 
-// PixelPerfect fix
-
-.price__control:last-child {
-  @media (min-width: $tablet-width) {
-    margin-left: 1px;
-  }
-}
-
 .price__control--active {
   color: $dark-cerulean-blue;
   box-shadow: inset 0 -1px $pink;

@@ -21,35 +21,32 @@
   line-height: 20px;
   text-decoration: none;
   color: $white;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+  outline: none;
 }
 
 .menu__link:hover {
-  opacity: 0.5;
+  text-decoration: 1px solid $white underline;
+  text-underline-offset: 8px;
 }
 
 .menu__link:focus-visible {
-  outline: 2px solid $white;
-  outline-offset: 4px;
+  border-color: $white;
+}
+
+.menu__link:focus-visible:hover {
+  border-color: transparent;
+  text-decoration: 1px solid $white underline;
+  text-underline-offset: 8px;
 }
 
 .menu__link:active {
-  opacity: 0.3;
+  border-color: transparent;
+  text-decoration: none;
 }
 
 .menu__link:disabled {
   pointer-events: none;
-  opacity: 0.2;
-}
-
-// PixelPerfect fix
-.menu__item:nth-child(3) {
-  @media (max-width: $mobile-width) {
-    margin-left: -1px;
-  }
-}
-
-.menu__item:nth-child(4) {
-  @media (min-width: $tablet-width) {
-    margin-left: -1px;
-  }
+  opacity: 0.4;
 }

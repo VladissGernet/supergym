@@ -518,15 +518,6 @@
   }
 }
 
-// PixelPerfect fix
-.wysiwyg-wrapper--accordion li:first-child span {
-  max-width: 200px;
-
-  @media (min-width: $tablet-width) {
-    max-width: unset;
-  }
-}
-
 .wysiwyg-wrapper--accordion li:last-child {
   @media (min-width: $tablet-width) {
     padding: 24px 0 25px;
