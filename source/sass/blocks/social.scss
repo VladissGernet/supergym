@@ -39,7 +39,7 @@
   background-color: $dark-cerulean-blue;
 }
 
-.social__link {
+.social__link:disabled {
   pointer-events: none;
   color: $dark-blue;
   background-color: rgb($white, 0.3);
