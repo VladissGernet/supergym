@@ -21,22 +21,26 @@
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  outline: none;
 }
 
 .social__link:hover {
-  opacity: 0.5;
+  color: $white;
+  background-color: $slate-gray;
 }
 
 .social__link:focus-visible {
-  outline: 2px solid $white;
-  outline-offset: 4px;
+  color: $white;
+  background-color: $resolution-blue;
 }
 
 .social__link:active {
-  opacity: 0.3;
+  color: $white;
+  background-color: $dark-cerulean-blue;
 }
 
-.social__link:disabled {
+.social__link {
   pointer-events: none;
-  opacity: 0.2;
+  color: $dark-blue;
+  background-color: rgb($white, 0.3);
 }
