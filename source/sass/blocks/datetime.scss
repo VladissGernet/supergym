@@ -46,6 +46,11 @@
   left: 0;
   top: 0;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    top: -0.5px;
+  }
 }
 
 .datetime__day {
@@ -115,7 +120,7 @@
   display: block;
 
   @media (min-width: $tablet-width) {
-    margin-top: 9px;
+    margin-top: 10px;
   }
 
   @media (min-width: $desktop-width) {
