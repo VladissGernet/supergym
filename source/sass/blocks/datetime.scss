@@ -21,7 +21,7 @@
     "day year";
   justify-content: start;
   position: relative;
-  margin-top: 2px;
+  margin-top: 2.3px;
   padding-top: 3px;
   padding-right: 1px;
   column-gap: 4px;
@@ -41,7 +41,7 @@
 .datetime__date-wrapper::before {
   position: absolute;
   content: "";
-  width: 100%;
+  width: calc(100% - 6px);
   height: 1px;
   left: 0;
   top: 0;
