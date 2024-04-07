@@ -29,6 +29,10 @@
   color: rgb($white, 0.8);
 }
 
+.link:hover::before {
+  background-color: rgb($white, 0.8);
+}
+
 .link:focus {
   border-color: $white;
 }
@@ -43,7 +47,7 @@
 }
 
 .link:active::before {
-  background-color: transparent;
+  background-color: $white;
 }
 
 .link:disabled {
@@ -64,12 +68,16 @@
   color: rgb($bahama-blue, 0.8);
 }
 
+.link--dark:hover::before {
+  background-color: rgb($bahama-blue, 0.8);
+}
+
 .link--dark:focus {
   border-color: $bahama-blue;
 }
 
 .link--dark:focus::before {
-  background-color: $bahama-blue;
+  background-color: transparent;
 }
 
 .link--dark:active {
