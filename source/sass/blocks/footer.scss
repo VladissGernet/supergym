@@ -15,7 +15,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-areas: "logo menu social";
-    gap: 35px;
+    gap: 25px;
     grid-template-columns: 110px 1fr 105px;
   }
 
@@ -36,7 +36,7 @@
 
   @media (min-width: $tablet-width) {
     grid-area: menu;
-    margin: 2px 0 0;
+    margin: 0.5px 0 0;
   }
 
   @media (min-width: $desktop-width) {
