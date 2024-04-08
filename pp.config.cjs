@@ -33,8 +33,8 @@ const mobileSections = [
   // { section: 'games', misMatchThreshold: 0.5 },
   // { section: 'juri', misMatchThreshold: 0.7 },
   // { section: 'features', misMatchThreshold: 2.2 },
-  { section: 'offers', misMatchThreshold: 1.3 },
-  // { section: 'faq', misMatchThreshold: 1.7 },
+  // { section: 'offers', misMatchThreshold: 1.3 },
+  { section: 'faq', misMatchThreshold: 1.7 },
   // { section: 'reviews', misMatchThreshold: 2.6 },
   // { section: 'form', misMatchThreshold: 1.6 },
   // { section: 'footer', misMatchThreshold: 2.0 }

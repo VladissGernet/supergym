@@ -506,6 +506,7 @@
 
 .wysiwyg-wrapper--accordion span {
   display: block;
+  max-width: 231px;
 
   @media (min-width: $tablet-width) {
     max-width: 500px;
@@ -525,6 +526,14 @@
 
   @media (min-width: $desktop-width) {
     padding: 23px 0;
+  }
+}
+
+.wysiwyg-wrapper--accordion li:first-child span {
+  max-width: 210px;
+
+  @media (min-width: $tablet-width) {
+    max-width: unset;
   }
 }
 
