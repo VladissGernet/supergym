@@ -29,8 +29,8 @@ const tabletSections = [
 const mobileSections = [
   // { section: 'hero', misMatchThreshold: 3.7 },
   // { section: 'about', misMatchThreshold: 1.8 },
-  { section: 'price', misMatchThreshold: 0.8 },
-  // { section: 'games', misMatchThreshold: 0.5 },
+  // { section: 'price', misMatchThreshold: 0.8 },
+  { section: 'games', misMatchThreshold: 0.5 },
   // { section: 'juri', misMatchThreshold: 0.7 },
   // { section: 'features', misMatchThreshold: 2.2 },
   // { section: 'offers', misMatchThreshold: 1.3 },

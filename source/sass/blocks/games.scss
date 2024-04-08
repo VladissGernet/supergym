@@ -1,5 +1,5 @@
 .games {
-  padding: 26px 0;
+  padding: 25px 0;
   color: $white;
 
   @media (min-width: $tablet-width) {
@@ -105,9 +105,9 @@
 
 .games__button {
   grid-area: button;
-  margin-top: 16px;
-  padding-top: 23px;
-  padding-bottom: 21.5px;
+  margin-top: 17px;
+  padding-top: 22px;
+  padding-bottom: 21px;
 
   @media (min-width: $tablet-width) {
     margin: 0;
